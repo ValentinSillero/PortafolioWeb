@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caso de estudio: Rebord Negocios Inmobiliarios | Valentín Sillero</title>
+  <meta name="description" content="Caso de estudio UX/UI de la plataforma web de Rebord Negocios Inmobiliarios: contexto, problema, objetivo, proceso, solución y aprendizajes.">
+  <meta name="author" content="Valentín Sillero">
+  <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0C10" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://SITE_URL/caso-rebord.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Valentín Sillero">
+  <meta property="og:title" content="Caso de estudio: Rebord Negocios Inmobiliarios">
+  <meta property="og:description" content="Cómo diseñé y desarrollé un catálogo inmobiliario claro, rápido y responsive para una inmobiliaria de Colón, Entre Ríos.">
+  <meta property="og:url" content="https://SITE_URL/caso-rebord.html">
+  <meta property="og:image" content="https://SITE_URL/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/img/projects/rebord-home-1200.webp" as="image" type="image/webp" imagesrcset="/assets/img/projects/rebord-home-720.webp 720w, /assets/img/projects/rebord-home-1200.webp 1200w" imagesizes="(min-width: 1232px) 1200px, 100vw">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4m0 0h11l-2 4 2 4H5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">VS</span>
+        <span class="brand-name">Valentín Sillero</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" data-nav-toggle>
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only" data-nav-label>Abrir menú</span>
+        </button>
+        <div class="nav-panel" id="menu-principal" data-nav-panel>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="/#inicio">Inicio</a></li>
+            <li><a class="nav-link" href="/#sobre-mi">Sobre mí</a></li>
+            <li><a class="nav-link" href="/#habilidades">Habilidades</a></li>
+            <li><a class="nav-link" href="/#proyectos" aria-current="page">Proyectos</a></li>
+            <li><a class="nav-link" href="/#experiencia">Experiencia</a></li>
+            <li><a class="nav-link" href="/#contacto">Contacto</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a class="icon-btn" href="https://github.com/ValentinSillero" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Valentín Sillero (se abre en una pestaña nueva)">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+            </a>
+            <button class="icon-btn" type="button" data-theme-toggle aria-label="Cambiar a modo oscuro">
+              <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+              <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+            </button>
+            <a class="btn btn-primary btn-sm" href="/#contacto">Contactarme</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <article aria-labelledby="cs-title">
+      <header class="cs-hero">
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+        <div class="container cs-hero-inner">
+          <a class="cs-back" href="/#proyecto-rebord">
+            <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg>
+            Volver a proyectos
+          </a>
+          <p class="eyebrow mono cs-eyebrow"><span>CE</span> Caso de estudio · Cliente real</p>
+          <h1 class="cs-title" id="cs-title">Rebord Negocios Inmobiliarios</h1>
+          <p class="cs-lead">Un catálogo inmobiliario claro, rápido y responsive para que cualquier persona encuentre una propiedad en Colón y alrededores, y consulte por ella en un toque.</p>
+
+          <dl class="cs-facts">
+            <div><dt>Cliente</dt><dd>Esteban Rebord Negocios Inmobiliarios</dd></div>
+            <div><dt>Año</dt><dd>2026</dd></div>
+            <div><dt>Mi rol</dt><dd>Diseño de interfaz y desarrollo full stack</dd></div>
+            <div><dt>Sitio publicado</dt><dd><a href="https://rebord-inmobiliaria.vercel.app/" target="_blank" rel="noopener noreferrer">rebord-inmobiliaria.vercel.app<span class="sr-only"> (se abre en una pestaña nueva)</span></a></dd></div>
+          </dl>
+        </div>
+      </header>
+
+      <div class="container">
+        <figure class="cs-cover">
+          <div class="frame">
+            <div class="frame-bar" aria-hidden="true"><span></span><span></span><span></span><em class="mono">rebord-inmobiliaria.vercel.app</em></div>
+            <img src="/assets/img/projects/rebord-home-1200.webp" srcset="/assets/img/projects/rebord-home-720.webp 720w, /assets/img/projects/rebord-home-1200.webp 1200w" sizes="(min-width: 1232px) 1200px, 100vw" width="1200" height="750" alt="Inicio del sitio de Rebord: titular “Encontrá la propiedad ideal para vos” con el buscador de operación, tipo, ubicación y precio sobre una foto de fondo" fetchpriority="high">
+          </div>
+        </figure>
+
+        <section class="cs-section" aria-labelledby="cs-contexto">
+          <header><p class="eyebrow mono"><span>01</span> Contexto</p><h2 id="cs-contexto">Una inmobiliaria local que necesitaba mostrar su cartera online.</h2></header>
+          <div class="cs-text">
+            <p>Rebord es una inmobiliaria de Colón, Entre Ríos, que trabaja con ventas, alquileres y tasaciones. Su cartera incluye casas, lotes, complejos turísticos y galpones, cada uno con muchas fotos y datos distintos.</p>
+            <p>La necesidad era un sitio propio donde publicar esas propiedades de forma ordenada, que se viera bien en el celular y que llevara a las personas directamente a hablar con la inmobiliaria.</p>
+          </div>
+        </section>
+
+        <section class="cs-section" aria-labelledby="cs-problema">
+          <header><p class="eyebrow mono"><span>02</span> Problema</p><h2 id="cs-problema">Mucha información, poco orden y un contacto con fricción.</h2></header>
+          <div class="cs-text">
+            <p class="cs-quote">La consulta de inmuebles requiere organizar mucha información, facilitar la búsqueda y simplificar el contacto con la inmobiliaria.</p>
+            <div class="cs-grid">
+              <div class="cs-card"><p class="mono">Organización</p><h3>Datos heterogéneos</h3><p>Cada tipo de propiedad tiene datos distintos (dormitorios, m² de lote, m² cubiertos, frente y fondo) y hasta 14 fotos.</p></div>
+              <div class="cs-card"><p class="mono">Búsqueda</p><h3>Encontrar lo relevante</h3><p>Con cientos de propiedades, recorrer todo el listado no es una opción: hay que poder filtrar por lo que la persona ya sabe que busca.</p></div>
+              <div class="cs-card"><p class="mono">Contacto</p><h3>Del interés a la consulta</h3><p>Si para consultar hay que copiar un número o completar un formulario largo, la intención se pierde.</p></div>
+              <div class="cs-card"><p class="mono">Mobile</p><h3>Pantallas chicas</h3><p>Filtros, galerías y fichas tenían que funcionar con el pulgar, sin zoom ni scroll horizontal.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cs-section" aria-labelledby="cs-objetivo">
+          <header><p class="eyebrow mono"><span>03</span> Objetivo</p><h2 id="cs-objetivo">Encontrar una propiedad y consultar por ella, rápido y sin vueltas.</h2></header>
+          <div class="cs-text">
+            <p>Crear una experiencia clara, rápida y responsive que permita encontrar propiedades y realizar consultas fácilmente. En concreto:</p>
+            <ul class="check-list">
+              <li>Que la búsqueda esté disponible desde el primer pantallazo.</li>
+              <li>Que cada tarjeta muestre lo necesario para decidir si abrirla: operación, foto, ubicación, superficie y precio.</li>
+              <li>Que la ficha concentre toda la información de la propiedad y termine en una acción de contacto.</li>
+              <li>Que las fotos —el contenido más pesado— no hagan lento el sitio.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cs-section" aria-labelledby="cs-proceso">
+          <header><p class="eyebrow mono"><span>04</span> Proceso</p><h2 id="cs-proceso">Decisiones de estructura, navegación y diseño.</h2></header>
+          <div class="cs-text">
+            <h3>Arquitectura de información</h3>
+            <p>Organicé el sitio en cinco secciones que responden a las preguntas típicas de quien entra a una inmobiliaria: <strong>Inicio</strong>, <strong>Propiedades</strong>, <strong>Tasaciones</strong>, <strong>Nosotros</strong> y <strong>Contacto</strong>. El catálogo es el centro; el resto da confianza y canales de contacto.</p>
+
+            <h3>Navegación</h3>
+            <p>El menú principal se mantiene fijo arriba, con WhatsApp y el teléfono de la oficina siempre visibles en desktop. En mobile se reduce a un menú hamburguesa y un botón flotante de WhatsApp que acompaña todo el recorrido.</p>
+
+            <h3>Filtros</h3>
+            <p>El buscador aparece en el hero del inicio y encabeza el catálogo. Los filtros siguen el orden en que una persona piensa la búsqueda: <strong>operación → tipo → ubicación → dormitorios → precio</strong>. Cada filtro es un desplegable con opciones cerradas, para evitar búsquedas sin resultados por errores de tipeo.</p>
+
+            <h3>Catálogo</h3>
+            <p>Grilla de tarjetas con la etiqueta de operación, un carrusel de fotos con contador (por ejemplo, “1 / 14”), título, ubicación, superficie y precio. Se muestra la cantidad de resultados, se puede ordenar y el listado está paginado para no cargar cientos de propiedades juntas.</p>
+
+            <h3>Experiencia mobile</h3>
+            <p>Diseñé primero para el celular: los filtros se apilan a ancho completo con áreas de toque grandes, las tarjetas pasan a una columna y la galería de la ficha se recorre con flechas y miniaturas.</p>
+
+            <div class="cs-shots-mobile">
+              <img src="/assets/img/projects/rebord-mobile-360.webp" width="360" height="720" loading="lazy" decoding="async" alt="Inicio de Rebord en un celular, con los filtros apilados a ancho completo y el botón Buscar">
+              <img src="/assets/img/projects/rebord-catalogo-mobile-360.webp" width="360" height="720" loading="lazy" decoding="async" alt="Catálogo de propiedades en un celular, en una sola columna">
+              <img src="/assets/img/projects/rebord-ficha-mobile-360.webp" width="360" height="720" loading="lazy" decoding="async" alt="Ficha de una propiedad en un celular, con título, precio y galería de fotos">
+            </div>
+          </div>
+        </section>
+
+        <section class="cs-section" aria-labelledby="cs-solucion">
+          <header><p class="eyebrow mono"><span>05</span> Solución</p><h2 id="cs-solucion">Un catálogo publicado, con fichas completas y contacto directo.</h2></header>
+          <div class="cs-text">
+            <div class="cs-shots">
+              <figure>
+                <div class="frame">
+                  <div class="frame-bar" aria-hidden="true"><span></span><span></span><span></span><em class="mono">/propiedades</em></div>
+                  <img src="/assets/img/projects/rebord-catalogo-1200.webp" srcset="/assets/img/projects/rebord-catalogo-720.webp 720w, /assets/img/projects/rebord-catalogo-1200.webp 1200w" sizes="(min-width: 1024px) 760px, 100vw" width="1200" height="750" loading="lazy" decoding="async" alt="Catálogo de Rebord: filtros de operación, tipo, ubicación, dormitorios y precio, contador de 400 propiedades y tarjetas con fotos">
+                </div>
+                <figcaption>Catálogo con filtros, cantidad de resultados y orden.</figcaption>
+              </figure>
+              <figure>
+                <div class="frame">
+                  <div class="frame-bar" aria-hidden="true"><span></span><span></span><span></span><em class="mono">/propiedades/casa-a-refaccionar-en-pueblo-liebig</em></div>
+                  <img src="/assets/img/projects/rebord-ficha-1200.webp" srcset="/assets/img/projects/rebord-ficha-720.webp 720w, /assets/img/projects/rebord-ficha-1200.webp 1200w" sizes="(min-width: 1024px) 760px, 100vw" width="1200" height="750" loading="lazy" decoding="async" alt="Ficha de propiedad: tipo y ubicación, título, precio en dólares y galería de fotos con flechas">
+                </div>
+                <figcaption>Ficha de propiedad: título, precio y galería a pantalla completa.</figcaption>
+              </figure>
+            </div>
+            <h3>Funcionalidades implementadas</h3>
+            <ul class="check-list">
+              <li>Catálogo de propiedades con tarjetas y carrusel de fotos.</li>
+              <li>Filtros por operación, tipo, ubicación, dormitorios y precio.</li>
+              <li>Búsqueda desde el inicio y desde el catálogo.</li>
+              <li>Fichas con descripción, características, superficie y ubicación.</li>
+              <li>Consulta por WhatsApp con mensaje precargado según la propiedad.</li>
+              <li>Propiedades relacionadas al final de cada ficha.</li>
+              <li>Paginación del listado y orden por más recientes.</li>
+              <li>Imágenes servidas y optimizadas con Cloudinary.</li>
+              <li>Diseño responsive, pensado primero para mobile.</li>
+            </ul>
+            <ul class="tags" role="list" aria-label="Stack técnico">
+              <li class="tag">Next.js</li><li class="tag">TypeScript</li><li class="tag">Tailwind CSS</li><li class="tag">PostgreSQL</li><li class="tag">Neon</li><li class="tag">TypeORM</li><li class="tag">Cloudinary</li><li class="tag">Vercel</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cs-section" aria-labelledby="cs-resultados">
+          <header><p class="eyebrow mono"><span>06</span> Resultados y aprendizajes</p><h2 id="cs-resultados">Qué se construyó y qué me llevo.</h2></header>
+          <div class="cs-text">
+            <p>El sitio está publicado y en uso por la inmobiliaria, con un catálogo de 400 propiedades visible al momento de escribir este caso (noviembre de 2026). No cuento con métricas de tráfico ni de consultas, por eso no las incluyo.</p>
+            <div class="cs-grid">
+              <div class="cs-card"><p class="mono">Aprendizaje 01</p><h3>El contenido manda</h3><p>Modelar bien los datos de cada tipo de propiedad fue lo que permitió que tarjetas, filtros y fichas fueran consistentes.</p></div>
+              <div class="cs-card"><p class="mono">Aprendizaje 02</p><h3>Las imágenes son el producto</h3><p>Delegar el procesamiento a Cloudinary resolvió el peso de las galerías sin perder calidad en las fotos.</p></div>
+              <div class="cs-card"><p class="mono">Aprendizaje 03</p><h3>Contacto en un toque</h3><p>Un WhatsApp con el mensaje ya armado reduce pasos frente a un formulario y le da contexto a la inmobiliaria.</p></div>
+              <div class="cs-card"><p class="mono">Aprendizaje 04</p><h3>Trabajar con un cliente real</h3><p>Traducir necesidades del negocio en decisiones de interfaz, priorizar y entregar en producción.</p></div>
+            </div>
+            <div class="cs-pending">
+              <h3><svg class="icon icon-sm" aria-hidden="true"><use href="#i-flag"/></svg> Pendiente de validación UX</h3>
+              <p>Para ser transparente: en este proyecto no se realizaron entrevistas ni pruebas formales con usuarios. Próximos pasos propuestos:</p>
+              <ul>
+                <li>Test de usabilidad con 3–5 personas buscando una propiedad concreta y consultando por ella.</li>
+                <li>Medir uso de filtros y clics en WhatsApp con analítica respetuosa de la privacidad.</li>
+                <li>Revisión de accesibilidad de la galería y los filtros con lector de pantalla.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <nav class="cs-next" aria-label="Siguiente proyecto">
+          <div>
+            <p class="eyebrow mono"><span>→</span> Siguiente</p>
+            <p class="project-title cs-next-title">DEETA — Sistema de gestión comercial</p>
+          </div>
+          <a class="btn btn-primary" href="/#proyecto-deeta">Ver proyecto <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </nav>
+        <div class="cs-spacer" aria-hidden="true"></div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">VS</span>
+          <span class="brand-name">Valentín Sillero</span>
+        </a>
+        <p class="footer-tagline">Desarrollador Web &amp; Software · Entre Ríos, Argentina</p>
+      </div>
+      <nav class="footer-nav" aria-label="Secciones (pie de página)">
+        <ul role="list">
+          <li><a href="/#inicio">Inicio</a></li>
+          <li><a href="/#sobre-mi">Sobre mí</a></li>
+          <li><a href="/#habilidades">Habilidades</a></li>
+          <li><a href="/#proyectos">Proyectos</a></li>
+          <li><a href="/#experiencia">Experiencia</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer-bottom mono">
+        <p>© <span data-year>2026</span> Valentín Sillero. Todos los derechos reservados.</p>
+        <p>Hecho con HTML5, CSS3 y JavaScript vanilla · Desplegado en Vercel</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

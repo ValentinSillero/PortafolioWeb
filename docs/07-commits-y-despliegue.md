@@ -25,21 +25,21 @@ Los cambios siguientes (URL publicada, email, LinkedIn, hallazgos del test de us
 
 ## Publicar en GitHub
 
+El repositorio público [ValentinSillero/PortafolioWeb](https://github.com/ValentinSillero/PortafolioWeb) se creó vacío desde github.com y se subió el historial con:
+
 ```bash
-gh repo create portfolio --public --source . --remote origin --description "Portfolio de Valentín Sillero — Desarrollador Web & Software"
+git remote add origin https://github.com/ValentinSillero/PortafolioWeb.git
 git push -u origin main
 ```
-
-(O crear el repo `portfolio` en github.com como **público** y seguir las instrucciones de “push an existing repository”.)
 
 ## Desplegar en Vercel (CI/CD desde GitHub)
 
 1. Entrar a [vercel.com/new](https://vercel.com/new) con la cuenta de GitHub.
-2. **Import Git Repository** → elegir `ValentinSillero/portfolio`.
+2. **Import Git Repository** → elegir `ValentinSillero/PortafolioWeb`.
 3. **Framework Preset: Other**. Build Command: *vacío*. Output Directory: *vacío* (raíz). Install Command: *vacío*.
-4. **Deploy**. Vercel publica en `https://<proyecto>.vercel.app` con HTTPS.
+4. **Deploy**. Vercel publica con HTTPS en https://portafolioweb-taupe-chi.vercel.app.
 5. Desde ese momento, cada `git push` a `main` despliega a producción y cada pull request genera una URL de preview.
-6. Reemplazar `SITE_URL` (en `index.html`, `caso-rebord.html`, `404.html`, `robots.txt`, `sitemap.xml`) por el dominio final, commitear y pushear.
+6. Con la URL definitiva se actualizaron canonical, Open Graph, `robots.txt` y `sitemap.xml`.
 7. Agregar la URL en el README y en la descripción del repo (**About → Website**).
 
 `vercel.json` ya define headers de seguridad (CSP, HSTS, X-Frame-Options, nosniff, Referrer-Policy, Permissions-Policy) y caché por tipo de recurso. `.vercelignore` evita publicar `docs/`.

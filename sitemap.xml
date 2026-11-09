@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- PENDIENTE: reemplazar SITE_URL por la URL pública definitiva -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://SITE_URL/</loc><lastmod>2026-11-09</lastmod><priority>1.0</priority></url>
-  <url><loc>https://SITE_URL/caso-rebord.html</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://portafolioweb-taupe-chi.vercel.app/</loc><lastmod>2026-11-09</lastmod><priority>1.0</priority></url>
+  <url><loc>https://portafolioweb-taupe-chi.vercel.app/caso-rebord.html</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
 </urlset>

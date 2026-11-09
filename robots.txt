@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# PENDIENTE: reemplazar SITE_URL por la URL pública definitiva
-Sitemap: https://SITE_URL/sitemap.xml
+Sitemap: https://portafolioweb-taupe-chi.vercel.app/sitemap.xml

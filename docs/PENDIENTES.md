@@ -7,8 +7,8 @@ Ordenados por prioridad. Lo obligatorio primero.
 - [ ] **Email real** — reemplazar `EMAIL_PENDIENTE` en `index.html` (todas las apariciones: enlaces `mailto:`, botón “Copiar email” y texto visible).
 - [ ] **LinkedIn** — reemplazar `LINKEDIN_PENDIENTE` en `index.html` (todas las apariciones). La consigna exige email + LinkedIn + otra red (GitHub ya está).
 - [ ] **Confirmar URL de Rebord** — usé `https://rebord-inmobiliaria.vercel.app/` (encontrada por búsqueda: inmobiliaria de Colón, Entre Ríos). Confirmar que es la versión oficial o cambiarla por el dominio propio si existe.
-- [ ] **Commits + repo público + deploy** — seguir `07-commits-y-despliegue.md` (14 commits listos).
-- [ ] **Reemplazar `SITE_URL`** por la URL de Vercel en `index.html`, `caso-rebord.html`, `404.html`, `robots.txt`, `sitemap.xml`; y completar los links del README.
+- [x] **Commits + repo público + deploy** — https://github.com/ValentinSillero/PortafolioWeb · https://portafolioweb-taupe-chi.vercel.app (deploy automático desde `main`).
+- [x] **URL definitiva** cargada en canonical, Open Graph, `robots.txt`, `sitemap.xml` y README.
 - [ ] **Lighthouse sobre la URL publicada** — guardar la captura en `docs/lighthouse/` (las actuales son del build local).
 - [ ] **Figma: compartir** con “Anyone with the link · can view”.
 - [ ] **Test de usabilidad con 3 personas** — guion y plantilla en `06-test-usabilidad.md`. Completar hallazgos y cambios aplicados, y actualizar la slide 9 de la presentación (`presentacion/presentacion.html`, exportar a PDF de nuevo).

@@ -6,8 +6,8 @@ Concepto visual: **“Precisión digital”**, un portfolio claro y editorial co
 
 | | |
 |---|---|
-| **Sitio publicado** | `PENDIENTE — https://<proyecto>.vercel.app` |
-| **Repositorio** | `PENDIENTE — https://github.com/ValentinSillero/portfolio` |
+| **Sitio publicado** | [portafolioweb-taupe-chi.vercel.app](https://portafolioweb-taupe-chi.vercel.app) |
+| **Repositorio** | [github.com/ValentinSillero/PortafolioWeb](https://github.com/ValentinSillero/PortafolioWeb) |
 | **Figma** (research, wireframes, design system, prototipo) | [figma.com/design/3AxCDCuNJOfTUIWiVaQyt2](https://www.figma.com/design/3AxCDCuNJOfTUIWiVaQyt2) |
 | **Proceso UX/UI (PDF, 10 slides)** | [`docs/presentacion/Proceso_UXUI_Valentin_Sillero.pdf`](docs/presentacion/Proceso_UXUI_Valentin_Sillero.pdf) |
 | **Lighthouse mobile** | [`docs/lighthouse/`](docs/lighthouse/) |
@@ -74,7 +74,7 @@ Abrir `http://localhost:5173`. (Las rutas son absolutas, `/assets/...`, por eso 
 2. En [vercel.com/new](https://vercel.com/new): **Import Git Repository** → elegir el repo.
 3. **Framework Preset: Other**, sin Build Command y sin Output Directory (se sirve la raíz).
 4. **Deploy.** Vercel publica con HTTPS y vuelve a desplegar en cada `git push` a `main` (CI/CD); cada pull request genera una URL de preview.
-5. Reemplazar `SITE_URL` en `index.html`, `caso-rebord.html`, `404.html`, `robots.txt` y `sitemap.xml` por la URL final y pushear.
+5. Las URLs canónicas, Open Graph, `robots.txt` y `sitemap.xml` apuntan a `https://portafolioweb-taupe-chi.vercel.app`. Si se agrega un dominio propio, actualizarlas ahí.
 
 `vercel.json` agrega headers de seguridad (Content-Security-Policy sin `unsafe-inline`, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy) y caché por tipo de recurso. Detalle de comandos y commits sugeridos en [`docs/07-commits-y-despliegue.md`](docs/07-commits-y-despliegue.md).
 

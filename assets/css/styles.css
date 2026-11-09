@@ -541,24 +541,23 @@ body.nav-open .site-header::before { background: var(--c-bg); }
    ========================================================================= */
 .about { display: grid; gap: var(--sp-10); }
 .portrait { margin: 0; max-width: 420px; }
-.portrait-placeholder {
-  position: relative; display: grid; place-items: center;
+.portrait-photo {
+  position: relative;
   aspect-ratio: 4 / 5; border-radius: var(--radius-lg);
   border: 1px solid var(--c-line);
-  background:
-    radial-gradient(circle at 30% 20%, var(--c-accent-soft), transparent 60%),
-    linear-gradient(var(--c-grid) 1px, transparent 1px) 0 0 / 24px 24px,
-    linear-gradient(90deg, var(--c-grid) 1px, transparent 1px) 0 0 / 24px 24px,
-    var(--c-surface);
+  background: var(--c-surface-2);
   overflow: hidden;
+  box-shadow: var(--shadow);
 }
-.portrait-placeholder::before, .portrait-placeholder::after {
-  content: ""; position: absolute; width: 22px; height: 22px; border-color: var(--c-accent); border-style: solid;
+.portrait-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-slow) var(--ease); }
+.portrait:hover .portrait-photo img { transform: scale(1.02); }
+/* Marcas de esquina del concepto "Precisión digital" */
+.portrait-photo::before, .portrait-photo::after {
+  content: ""; position: absolute; z-index: 1; width: 22px; height: 22px; border-color: #FFFFFF; border-style: solid;
+  filter: drop-shadow(0 0 2px rgba(13, 14, 18, .35));
 }
-.portrait-placeholder::before { top: 16px; left: 16px; border-width: 1.5px 0 0 1.5px; }
-.portrait-placeholder::after { bottom: 16px; right: 16px; border-width: 0 1.5px 1.5px 0; }
-.portrait-initials { font-size: clamp(4rem, 3rem + 6vw, 7rem); font-weight: 600; letter-spacing: -.06em; color: var(--c-ink); }
-.portrait-note { position: absolute; bottom: 20px; left: 20px; font-size: 11px; color: var(--c-muted); text-transform: uppercase; letter-spacing: .06em; }
+.portrait-photo::before { top: 16px; left: 16px; border-width: 1.5px 0 0 1.5px; }
+.portrait-photo::after { bottom: 16px; right: 16px; border-width: 0 1.5px 1.5px 0; }
 .portrait figcaption { margin-top: var(--sp-3); font-size: var(--fs-xs); color: var(--c-muted); text-transform: uppercase; letter-spacing: .06em; }
 
 .about-copy { display: grid; gap: var(--sp-4); align-content: start; font-size: var(--fs-md); }

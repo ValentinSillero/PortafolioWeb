@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# PENDIENTE: reemplazar SITE_URL por la URL pública definitiva
+Sitemap: https://SITE_URL/sitemap.xml

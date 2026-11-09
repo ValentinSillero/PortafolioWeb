@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design system — Valentín Sillero</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <style>
+    body { padding: 48px 0 80px; }
+    .ds { max-width: 1240px; margin: 0 auto; padding: 0 40px; display: grid; gap: 56px; }
+    .ds h1 { font-size: 56px; letter-spacing: -.045em; }
+    .ds h2 { font-size: 26px; letter-spacing: -.03em; margin-bottom: 18px; display: flex; gap: 12px; align-items: baseline; }
+    .ds h2 small { font-family: var(--font-mono); font-size: 12px; color: var(--c-muted); font-weight: 400; letter-spacing: 0; }
+    .ds .lbl { font-family: var(--font-mono); font-size: 11px; color: var(--c-muted); text-transform: uppercase; letter-spacing: .06em; }
+    .sw-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+    .sw { border: 1px solid var(--c-line); border-radius: 12px; overflow: hidden; background: var(--c-surface); }
+    .sw div { height: 72px; }
+    .sw p { padding: 10px 12px; font-size: 12px; line-height: 1.4; }
+    .sw p b { display: block; color: var(--c-ink); font-weight: 600; }
+    .type-row { display: grid; grid-template-columns: 180px 1fr; align-items: baseline; gap: 24px; padding: 14px 0; border-bottom: 1px solid var(--c-line); }
+    .sp-row { display: flex; align-items: center; gap: 16px; padding: 6px 0; }
+    .sp-bar { height: 16px; background: var(--c-accent); border-radius: 3px; }
+    .grids { display: grid; grid-template-columns: 1fr 2fr 4fr; gap: 24px; align-items: end; }
+    .gridbox { border: 1px solid var(--c-line); border-radius: 12px; padding: 12px; background: var(--c-surface); }
+    .gridcols { display: grid; height: 120px; }
+    .gridcols span { background: color-mix(in srgb, var(--c-accent) 14%, transparent); border-inline: 1px solid color-mix(in srgb, var(--c-accent) 35%, transparent); }
+    .states { display: grid; grid-template-columns: 120px repeat(5, 1fr); gap: 16px; align-items: center; }
+    .comp { display: grid; grid-template-columns: 1.3fr 1fr; gap: 32px; align-items: start; }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .force-focus { outline: 2px solid var(--c-accent); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+<div class="ds">
+  <header>
+    <p class="eyebrow mono"><span>DS</span> Design system · v1.0 · noviembre 2026</p>
+    <h1 style="margin-top:16px">Precisión digital</h1>
+    <p class="section-intro" style="margin-top:12px">Tokens definidos en <code>assets/css/styles.css</code> (<code>:root</code>). Esta página usa los mismos estilos del sitio, así diseño e implementación no se separan.</p>
+  </header>
+
+  <section>
+    <h2>Paleta <small>primario · secundario · neutros · estados</small></h2>
+    <div class="sw-row">
+      <div class="sw"><div style="background:#2E3BFF"></div><p><b>Accent</b>#2E3BFF<br>6.3:1 sobre bg</p></div>
+      <div class="sw"><div style="background:#1E28D6"></div><p><b>Accent hover</b>#1E28D6</p></div>
+      <div class="sw"><div style="background:#161EA8"></div><p><b>Accent active</b>#161EA8</p></div>
+      <div class="sw"><div style="background:#ECEEFF"></div><p><b>Accent soft</b>#ECEEFF</p></div>
+      <div class="sw"><div style="background:#6B4BFF"></div><p><b>Violet (2°)</b>#6B4BFF · 4.9:1</p></div>
+      <div class="sw"><div style="background:#0F7B4B"></div><p><b>Success</b>#0F7B4B · 5.1:1</p></div>
+      <div class="sw"><div style="background:#0D0E12"></div><p><b>Ink</b>#0D0E12 títulos</p></div>
+      <div class="sw"><div style="background:#3A3D45"></div><p><b>Ink 2</b>#3A3D45 · 10.4:1</p></div>
+      <div class="sw"><div style="background:#5E616B"></div><p><b>Muted</b>#5E616B · 5.9:1</p></div>
+      <div class="sw"><div style="background:#E4E3DC"></div><p><b>Line</b>#E4E3DC bordes</p></div>
+      <div class="sw"><div style="background:#F3F3EE"></div><p><b>Surface 2</b>#F3F3EE</p></div>
+      <div class="sw"><div style="background:#FAFAF7"></div><p><b>Background</b>#FAFAF7</p></div>
+    </div>
+    <p class="lbl" style="margin-top:14px">Modo oscuro: bg #0B0C10 · surface #13151B · ink #F2F2EE · muted #A3A6B0 (8:1) · accent #7C8AFF (6.5:1)</p>
+  </section>
+
+  <section>
+    <h2>Tipografía <small>Geist + Geist Mono · escala ~1.25 · títulos fluidos con clamp()</small></h2>
+    <div class="type-row"><span class="lbl">Display · 48→120 / 600</span><span style="font-size:88px;line-height:.94;letter-spacing:-.055em;font-weight:600;color:var(--c-ink)">Valentín</span></div>
+    <div class="type-row"><span class="lbl">H2 · 34→56 / 600</span><span style="font-size:48px;letter-spacing:-.035em;font-weight:600;color:var(--c-ink);line-height:1.08">Trabajo real</span></div>
+    <div class="type-row"><span class="lbl">H3 card · 28→40 / 600</span><span style="font-size:34px;letter-spacing:-.03em;font-weight:600;color:var(--c-ink)">Rebord Negocios</span></div>
+    <div class="type-row"><span class="lbl">Lead · 20–24 / 500</span><span style="font-size:22px;font-weight:500;color:var(--c-ink)">Desarrollador Web &amp; Software</span></div>
+    <div class="type-row"><span class="lbl">Body · 16–18 / 400 · lh 1.6</span><span style="font-size:17px">Desarrollo experiencias digitales, sitios web y soluciones de software.</span></div>
+    <div class="type-row"><span class="lbl">Small · 14 / 400</span><span style="font-size:14px;color:var(--c-muted)">Texto secundario, descripciones de tarjetas.</span></div>
+    <div class="type-row"><span class="lbl">Mono label · 12 / caps</span><span class="mono" style="font-size:12px;text-transform:uppercase;letter-spacing:.06em">01 · Proyectos · 2026</span></div>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Espaciado <small>base 4 px</small></h2>
+      <div class="sp-row"><span class="lbl" style="width:80px">4</span><div class="sp-bar" style="width:4px"></div></div>
+      <div class="sp-row"><span class="lbl" style="width:80px">8</span><div class="sp-bar" style="width:8px"></div></div>
+      <div class="sp-row"><span class="lbl" style="width:80px">12</span><div class="sp-bar" style="width:12px"></div></div>
+      <div class="sp-row"><span class="lbl" style="width:80px">16</span><div class="sp-bar" style="width:16px"></div></div>
+      <div class="sp-row"><span class="lbl" style="width:80px">24</span><div class="sp-bar" style="width:24px"></div></div>
+      <div class="sp-row"><span class="lbl" style="width:80px">32</span><div class="sp-bar" style="width:32px"></div></div>
+      <div class="sp-row"><span class="lbl" style="width:80px">48</span><div class="sp-bar" style="width:48px"></div></div>
+      <div class="sp-row"><span class="lbl" style="width:80px">64</span><div class="sp-bar" style="width:64px"></div></div>
+      <div class="sp-row"><span class="lbl" style="width:80px">96–128</span><div class="sp-bar" style="width:128px"></div><span class="lbl">padding de sección</span></div>
+      <p class="lbl" style="margin-top:12px">Radios: 6 · 12 · 20 · pill — Bordes 1 px</p>
+    </div>
+    <div>
+      <h2>Grilla <small>mobile-first</small></h2>
+      <div class="grids">
+        <div class="gridbox"><div class="gridcols" style="grid-template-columns:repeat(4,1fr);gap:8px"><span></span><span></span><span></span><span></span></div><p class="lbl" style="margin-top:8px">375 · 4 col · gutter 16 · margen 16</p></div>
+        <div class="gridbox"><div class="gridcols" style="grid-template-columns:repeat(8,1fr);gap:8px"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><p class="lbl" style="margin-top:8px">768 · 8 col · gutter 20</p></div>
+        <div class="gridbox"><div class="gridcols" style="grid-template-columns:repeat(12,1fr);gap:8px"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><p class="lbl" style="margin-top:8px">1280 · 12 col · gutter 24 · máx 1200</p></div>
+      </div>
+      <p class="lbl" style="margin-top:12px">Breakpoints: 640 · 768 · 1024 · 1280</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Botones <small>4 estados + deshabilitado</small></h2>
+    <div class="states">
+      <span></span><span class="lbl">Default</span><span class="lbl">Hover</span><span class="lbl">Focus</span><span class="lbl">Active</span><span class="lbl">Disabled</span>
+      <span class="lbl">Primario</span>
+      <span><a class="btn btn-primary">Ver proyectos</a></span>
+      <span><a class="btn btn-primary" style="--btn-bg:var(--c-accent-hover)">Ver proyectos</a></span>
+      <span><a class="btn btn-primary force-focus">Ver proyectos</a></span>
+      <span><a class="btn btn-primary" style="--btn-bg:var(--c-accent-active);transform:translateY(1px) scale(.98)">Ver proyectos</a></span>
+      <span><a class="btn btn-primary" aria-disabled="true">Ver proyectos</a></span>
+      <span class="lbl">Secundario</span>
+      <span><a class="btn btn-secondary">Contactarme</a></span>
+      <span><a class="btn btn-secondary" style="--btn-line:var(--c-ink)">Contactarme</a></span>
+      <span><a class="btn btn-secondary force-focus">Contactarme</a></span>
+      <span><a class="btn btn-secondary" style="--btn-bg:var(--c-surface-2);transform:translateY(1px) scale(.98)">Contactarme</a></span>
+      <span><a class="btn btn-secondary" aria-disabled="true">Contactarme</a></span>
+    </div>
+  </section>
+
+  <section class="comp">
+    <div>
+      <h2>Tarjeta de proyecto</h2>
+      <article class="project" style="max-width:560px">
+        <div class="project-media"><div class="frame"><div class="frame-bar"><span></span><span></span><span></span><em class="mono">deetaia.vercel.app</em></div><img src="../../assets/img/projects/deeta-home-720.webp" width="720" height="450" alt=""></div></div>
+        <div class="project-body">
+          <p class="project-meta mono"><span class="pill pill-violet">Producto propio</span><span>2026</span><span>SaaS · Beta</span></p>
+          <h3 class="project-title">DEETA</h3>
+          <p class="project-desc">Gestión comercial para pequeños negocios.</p>
+          <dl class="project-facts"><div><dt>Problema</dt><dd>Ventas y stock en cuadernos.</dd></div><div><dt>Aprendizaje</dt><dd>Producto propio de punta a punta.</dd></div></dl>
+          <ul class="tags" role="list"><li class="tag">Next.js</li><li class="tag">TypeScript</li><li class="tag">PostgreSQL</li></ul>
+          <div class="project-actions"><a class="btn btn-primary">Ver detalles</a><a class="btn btn-secondary">Visitar sitio</a></div>
+        </div>
+      </article>
+    </div>
+    <div style="display:grid;gap:40px">
+      <div>
+        <h2>Tags y etiquetas</h2>
+        <ul class="tags" role="list"><li class="tag">HTML5</li><li class="tag">Tailwind CSS</li><li class="tag" style="border-color:var(--c-accent);color:var(--c-accent)">Hover</li></ul>
+        <p class="project-meta mono" style="margin-top:14px"><span class="pill pill-accent">Cliente real</span><span class="pill pill-violet">Producto propio</span><span class="pill">Académico</span></p>
+        <p style="margin-top:14px"><a class="badge"><span class="status-dot"></span>Consultá mi disponibilidad</a></p>
+      </div>
+      <div>
+        <h2>Ítem de timeline</h2>
+        <ol class="timeline" role="list"><li class="timeline-item"><div class="timeline-marker"></div><article class="timeline-card"><p class="timeline-period mono"><span>2026</span><span class="pill pill-accent">Cliente</span></p><h3>Desarrollador web</h3><p class="timeline-org">Rebord Negocios Inmobiliarios</p><ul class="timeline-achievements"><li>Catálogo con filtros y fichas.</li><li>Consultas por WhatsApp.</li></ul></article></li></ol>
+      </div>
+      <div>
+        <h2>Íconos y otros <small>línea 1.6 px</small></h2>
+        <p class="lbl">Sin formulario de contacto (opcional en la consigna): no se definen inputs. Contacto por mailto + copiar email.</p>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

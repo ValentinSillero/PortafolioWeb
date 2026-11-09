@@ -3,7 +3,7 @@
 **Archivo:** [Portfolio Valentín Sillero — UX/UI 2026](https://www.figma.com/design/3AxCDCuNJOfTUIWiVaQyt2)
 Creado el 9/11/2026 desde la integración de Figma de Claude Code, en tus **Drafts** (plan Starter).
 
-> **Acción pendiente:** en Figma → **Share** → “Anyone with the link” → **can view**. Sin eso el docente no puede abrirlo. Opcional: moverlo de Drafts a un proyecto.
+> Compartido públicamente en modo lectura: cualquiera con el link puede verlo sin iniciar sesión.
 
 ## Contenido (3 páginas: el máximo del plan Starter)
 
@@ -41,7 +41,7 @@ Flujos de inicio: **Desktop** y **Mobile** (Present ▶).
 
 ## Pendientes en Figma
 
-- [ ] Compartir con permiso de visualización y pegar el link en la entrega.
+- [x] Compartido con “Anyone with the link · can view” (verificado sin sesión iniciada).
 - [x] Capturas del prototipo (Desktop · Home y Mobile · Home) actualizadas a la versión actual del sitio, con foto y badge “Disponible” (revisado por Valentín en Figma).
 - [ ] Comparación lado a lado Figma / sitio de 2 secciones (sugerencia del docente para la presentación).
 - [ ] Si el test de usabilidad se hace sobre el prototipo, registrar en `06-test-usabilidad.md` que se usó este archivo.

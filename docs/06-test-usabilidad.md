@@ -78,11 +78,11 @@ Facilidad (1–5): __   Lo más confuso: ____________________________
 
 | # | Hallazgo | Participante | Cambio aplicado | Estado |
 |---|---|---|---|---|
-| H1 | El contacto no es lo bastante visible | P1 | En mobile y tablet el botón de contacto solo existía dentro del menú hamburguesa. Ahora hay un botón **“Contacto”** siempre visible en el header, junto al menú (en desktop ya estaba en la barra). | Aplicado · `7c72308` |
+| H1 | El contacto no es lo bastante visible | P1 | Primero se agregó un botón **“Contacto”** fijo en el header mobile y tablet (`7c72308`). En una revisión de diseño posterior se retiró por redundante con el link “Contacto” y el botón “Contactarme” del menú. El contacto queda accesible desde el CTA “Contactarme” del hero (visible al abrir la página), el menú y la barra de desktop. | Revisado · pendiente de revalidar |
 | H2 | Las descripciones de las tarjetas son extensas en mobile | P2 | Se acortaron la descripción, el problema y el resultado/aprendizaje de las 3 tarjetas (entre un 29 % y un 36 % menos de caracteres por tarjeta), sin quitar los campos que pide la consigna. | Aplicado · `7c72308` |
 | H3 | “Visitar sitio” y “Ver caso de estudio” no se distinguen lo suficiente | P3 | La acción principal sigue como botón relleno (“Ver caso de estudio” / “Ver detalles”) y “Visitar sitio ↗” pasó a ser un **enlace subrayado** con ícono externo: dos niveles visuales para dos destinos distintos. | Aplicado · `7c72308` |
 
 ## Próximos pasos
 
 - Repetir una ronda corta con las tareas que no se cubrieron (T1 encontrar el email, T4 tecnologías, T6 menú → Experiencia) y medir tiempos.
-- Verificar con P1–P3 o con nuevas personas que los tres cambios resolvieron los hallazgos.
+- Verificar con P1–P3 o con nuevas personas que los cambios resolvieron los hallazgos, en especial H1 (visibilidad del contacto en mobile) tras retirar el botón fijo del header.

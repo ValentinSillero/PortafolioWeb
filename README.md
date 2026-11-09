@@ -87,7 +87,7 @@ Abrir `http://localhost:5173`. (Las rutas son absolutas, `/assets/...`, por eso 
 - **Accesibilidad:** un solo `h1`, jerarquía sin saltos, link “Saltar al contenido”, foco visible, menú con `aria-expanded`/`aria-controls`, cierre con Esc y foco atrapado, `<dialog>` nativo para los modales, `aria-current` en la navegación, contraste AA verificado en modo claro y oscuro, `prefers-reduced-motion` y `forced-colors`.
 - **Caso de estudio en página propia** (no modal): compartible, indexable y legible con calma. DEETA y Cubrí tienen un modal de detalle.
 - **Datos honestos:** cada métrica indica su fuente, y lo que no se registró (por ejemplo, tiempos en el test de usabilidad) se aclara en vez de inventarse.
-- **Validación con usuarios:** test con 3 personas (computadora y celular) sobre el sitio publicado; sus tres hallazgos se aplicaron (contacto visible en mobile, tarjetas más breves y acciones de proyecto diferenciadas). Detalle en [`docs/06-test-usabilidad.md`](docs/06-test-usabilidad.md).
+- **Validación con usuarios:** test con 3 personas (computadora y celular) sobre el sitio publicado; sus hallazgos llevaron a tarjetas más breves, acciones de proyecto diferenciadas y una revisión de la visibilidad del contacto. Detalle en [`docs/06-test-usabilidad.md`](docs/06-test-usabilidad.md).
 - **Bonus de la rúbrica:** modo oscuro/claro con toggle y `prefers-color-scheme`, página 404 propia, headers de seguridad, animaciones accesibles.
 
 ## Resultados de Lighthouse (mobile)

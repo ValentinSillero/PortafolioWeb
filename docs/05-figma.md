@@ -42,5 +42,6 @@ Flujos de inicio: **Desktop** y **Mobile** (Present ▶).
 ## Pendientes en Figma
 
 - [ ] Compartir con permiso de visualización y pegar el link en la entrega.
+- [ ] Revisar que las capturas del prototipo (Desktop · Home y Mobile · Home) muestren la versión actual del sitio, con foto y badge “Disponible”. Si no, reemplazar el fill de cada “Captura 1/2/3” por las imágenes de la carpeta local `figma-capturas/` (el plan Starter cortó las llamadas de la integración antes de verificarlo).
 - [ ] Comparación lado a lado Figma / sitio de 2 secciones (sugerencia del docente para la presentación).
 - [ ] Si el test de usabilidad se hace sobre el prototipo, registrar en `06-test-usabilidad.md` que se usó este archivo.

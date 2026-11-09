@@ -12,7 +12,7 @@ Ordenados por prioridad. Lo obligatorio primero.
 - [x] **Lighthouse sobre la URL publicada** — 100/100/100/100 en `/` y en el caso de estudio (`docs/lighthouse/lighthouse-mobile-vercel-*.png`).
 - [ ] **Figma: compartir** con “Anyone with the link · can view”.
 - [ ] **Test de usabilidad con 3 personas** — guion y plantilla en `06-test-usabilidad.md`. Completar hallazgos y cambios aplicados, y actualizar la slide 9 de la presentación (`presentacion/presentacion.html`, exportar a PDF de nuevo).
-- [ ] **README → Uso de IA:** escribir tu revisión humana.
+- [x] **README → Uso de IA:** revisión humana redactada a partir de lo que hiciste en el proyecto. Leela y agregá cualquier otra prueba o ajuste que hayas hecho vos (por ejemplo, revisarlo en tu celular).
 
 ## Recomendado
 

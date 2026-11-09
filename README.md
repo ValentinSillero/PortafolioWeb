@@ -120,7 +120,14 @@ Siguiendo la política de la cátedra, declaro que usé **Claude (Anthropic) med
 - Construir el archivo de Figma (variables, estilos, componentes y prototipo) mediante la integración oficial de Figma.
 - Tomar capturas, convertir imágenes y ejecutar Lighthouse.
 
-**Revisión humana:** `PENDIENTE — completar antes de entregar` describiendo qué revisaste y cambiaste (por ejemplo: textos, datos de proyectos, pruebas en tu celular, ajustes de diseño). Los datos de proyectos y métricas se tomaron de fuentes verificables (sitios publicados y GitHub); nada de lo que figura como resultado de investigación o test fue inventado.
+**Revisión humana y decisiones propias:**
+
+- Definí el brief completo antes de generar código: objetivos, restricciones técnicas (sitio estático sin frameworks), estructura de secciones, dirección visual y los tres proyectos a mostrar con sus funcionalidades y tecnologías.
+- Aporté y verifiqué el contenido real: proyectos (Rebord, DEETA y Cubrí) y sus URLs, dominio oficial de Rebord, formación (Licenciatura desde 2025, cursos de Coderhouse 2023–2024), disponibilidad, email, LinkedIn y mi fotografía.
+- Revisé el resultado y pedí correcciones: que el historial de Git se organizara en commits honestos y sin etapas inventadas, y que la autoría de los commits quedara a mi nombre.
+- Creé el repositorio público en GitHub y configuré el despliegue en Vercel.
+
+Los datos de proyectos y métricas se tomaron de fuentes verificables (sitios publicados y GitHub). Lo que todavía no se hizo, como el test de usabilidad con personas, figura como pendiente: nada se presenta como resultado de investigación o test sin haberse realizado.
 
 ## Licencia
 

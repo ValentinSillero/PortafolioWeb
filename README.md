@@ -91,16 +91,16 @@ Abrir `http://localhost:5173`. (Las rutas son absolutas, `/assets/...`, por eso 
 
 ## Resultados de Lighthouse (mobile)
 
-Medido el 9/11/2026 sobre el build local (`python -m http.server`, sin compresión):
+Medido el 9/11/2026 sobre el sitio publicado en Vercel (Lighthouse 12, emulación mobile):
 
-| Página | Performance | Accessibility | Best Practices | SEO |
-|---|---|---|---|---|
-| `/` | 98 | 100 | 100 | 100 |
-| `/caso-rebord.html` | 98 | 100 | 100 | 100 |
+| Página | Performance | Accessibility | Best Practices | SEO | LCP | CLS |
+|---|---|---|---|---|---|---|
+| `/` | 100 | 100 | 100 | 100 | 1.6 s | 0 |
+| `/caso-rebord.html` | 100 | 100 | 100 | 100 | 1.6 s | 0 |
 
-![Lighthouse mobile](docs/lighthouse/lighthouse-mobile-index.png)
+![Lighthouse mobile sobre la URL publicada](docs/lighthouse/lighthouse-mobile-vercel-index.png)
 
-> Pendiente: volver a correr Lighthouse sobre la URL de Vercel (que agrega compresión y caché) y guardar esa captura para la entrega.
+Reportes completos en [`docs/lighthouse/`](docs/lighthouse/) (`lh-mobile-vercel-*.report.html`). También quedan los del build local (98/100/100/100), sin la compresión ni la caché de Vercel.
 
 ## Recursos y créditos
 

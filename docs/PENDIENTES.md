@@ -9,7 +9,7 @@ Ordenados por prioridad. Lo obligatorio primero.
 - [ ] **Confirmar URL de Rebord** — usé `https://rebord-inmobiliaria.vercel.app/` (encontrada por búsqueda: inmobiliaria de Colón, Entre Ríos). Confirmar que es la versión oficial o cambiarla por el dominio propio si existe.
 - [x] **Commits + repo público + deploy** — https://github.com/ValentinSillero/PortafolioWeb · https://portafolioweb-taupe-chi.vercel.app (deploy automático desde `main`).
 - [x] **URL definitiva** cargada en canonical, Open Graph, `robots.txt`, `sitemap.xml` y README.
-- [ ] **Lighthouse sobre la URL publicada** — guardar la captura en `docs/lighthouse/` (las actuales son del build local).
+- [x] **Lighthouse sobre la URL publicada** — 100/100/100/100 en `/` y en el caso de estudio (`docs/lighthouse/lighthouse-mobile-vercel-*.png`).
 - [ ] **Figma: compartir** con “Anyone with the link · can view”.
 - [ ] **Test de usabilidad con 3 personas** — guion y plantilla en `06-test-usabilidad.md`. Completar hallazgos y cambios aplicados, y actualizar la slide 9 de la presentación (`presentacion/presentacion.html`, exportar a PDF de nuevo).
 - [ ] **README → Uso de IA:** escribir tu revisión humana.

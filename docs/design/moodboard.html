@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <title>Moodboard — Precisión digital</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <style>
+    body { padding: 40px; }
+    .mb { width: 1520px; margin: 0 auto; display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 110px; gap: 16px; }
+    .t { border: 1px solid var(--c-line); border-radius: 16px; overflow: hidden; background: var(--c-surface); position: relative; }
+    .t img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .cap { position: absolute; left: 10px; bottom: 10px; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; background: var(--c-bg); padding: 3px 8px; border-radius: 6px; border: 1px solid var(--c-line); }
+    .pad { padding: 22px; display: grid; align-content: space-between; }
+    .grid-tex { background: linear-gradient(var(--c-grid) 1px, transparent 1px) 0 0/24px 24px, linear-gradient(90deg, var(--c-grid) 1px, transparent 1px) 0 0/24px 24px, var(--c-surface); }
+  </style>
+</head>
+<body>
+  <div class="mb">
+    <div class="t pad" style="grid-column:span 5;grid-row:span 3">
+      <p class="eyebrow mono"><span>MB</span> Moodboard · concepto</p>
+      <div><p style="font-size:84px;line-height:.92;letter-spacing:-.055em;font-weight:600;color:var(--c-ink)">Precisión<br>digital</p>
+      <p class="mono" style="margin-top:18px;font-size:14px;color:var(--c-muted)">INNOVACIÓN · PRECISIÓN · SIMPLICIDAD</p></div>
+    </div>
+    <div class="t" style="grid-column:span 4;grid-row:span 2"><img src="../img/bench-rauno.webp" alt=""><span class="cap">Ref · rauno.me — tipografía protagonista</span></div>
+    <div class="t" style="grid-column:span 3;grid-row:span 2;background:#2E3BFF" ><div class="pad" style="height:100%;color:#fff"><span class="mono" style="font-size:12px">ACCENT</span><span style="font-size:28px;font-weight:600">#2E3BFF<br><span class="mono" style="font-size:12px;font-weight:400">azul eléctrico</span></span></div></div>
+    <div class="t grid-tex" style="grid-column:span 3;grid-row:span 2"><span class="cap">Textura · grilla de plano 24/48 px</span></div>
+    <div class="t" style="grid-column:span 4;grid-row:span 2"><img src="../img/bench-brittanychiang.webp" alt=""><span class="cap">Ref · timeline + nav activa</span></div>
+    <div class="t pad" style="grid-column:span 5;grid-row:span 2"><span class="mono" style="font-size:12px;color:var(--c-muted)">GEIST / GEIST MONO</span><p style="font-size:56px;letter-spacing:-.04em;font-weight:600;color:var(--c-ink);line-height:1">Aa Bb 0123</p><p class="mono" style="font-size:20px;color:var(--c-ink)">01 / Proyectos — 2026</p></div>
+    <div class="t" style="grid-column:span 4;grid-row:span 2"><img src="../../assets/img/projects/rebord-home-720.webp" alt=""><span class="cap">Propio · Rebord</span></div>
+    <div class="t" style="grid-column:span 3;grid-row:span 2"><div style="display:grid;grid-template-rows:repeat(4,1fr);height:100%"><div style="background:#FAFAF7"></div><div style="background:#E4E3DC"></div><div style="background:#5E616B"></div><div style="background:#0D0E12"></div></div><span class="cap">Neutros cálidos</span></div>
+    <div class="t" style="grid-column:span 4;grid-row:span 2"><img src="../../assets/img/projects/deeta-home-720.webp" alt=""><span class="cap">Propio · DEETA</span></div>
+    <div class="t" style="grid-column:span 4;grid-row:span 2"><img src="../img/bench-leerob.webp" alt=""><span class="cap">Ref · leerob.com — aire y legibilidad</span></div>
+    <div class="t pad" style="grid-column:span 4;grid-row:span 2"><span class="mono" style="font-size:12px;color:var(--c-muted)">COMPONENTES</span><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-primary">Ver proyectos</a><a class="btn btn-secondary">Contactarme</a><span class="badge"><span class="status-dot"></span>Disponibilidad</span></div></div>
+  </div>
+</body>
+</html>

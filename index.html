@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valentín Sillero — Desarrollador Web &amp; Software | Portfolio</title>
+  <meta name="description" content="Portfolio de Valentín Sillero, desarrollador web y de software de Entre Ríos, Argentina. Proyectos reales: Rebord Negocios Inmobiliarios, DEETA y Cubrí Seguros.">
+  <meta name="author" content="Valentín Sillero">
+  <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0C10" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <!-- PENDIENTE: reemplazar SITE_URL por la URL pública definitiva de Vercel -->
+  <link rel="canonical" href="https://SITE_URL/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Valentín Sillero">
+  <meta property="og:title" content="Valentín Sillero — Desarrollador Web &amp; Software">
+  <meta property="og:description" content="Desarrollo sitios web y soluciones de software que transforman ideas en productos funcionales, modernos y escalables.">
+  <meta property="og:url" content="https://SITE_URL/">
+  <meta property="og:image" content="https://SITE_URL/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Portada del portfolio de Valentín Sillero">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Sprite de íconos (línea, 1.5px) -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3.5 6.5h17v11h-17zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h10v10H9zM5 15V5h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="16" cy="7" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9h17M9 9v10.5" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-blocks" viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 13h7v7h-7zM13 4h7v7h-7zM4 13h7v7H4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-loop" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 4v4h4M4 13a8 8 0 0 0 14.3 4.9L20 16M20 20v-4h-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <!-- 01 · HEADER / NAVEGACIÓN -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">VS</span>
+        <span class="brand-name">Valentín Sillero</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" data-nav-toggle>
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only" data-nav-label>Abrir menú</span>
+        </button>
+        <div class="nav-panel" id="menu-principal" data-nav-panel>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+            <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li><a class="nav-link" href="#experiencia">Experiencia</a></li>
+            <li><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a class="icon-btn" href="https://github.com/ValentinSillero" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Valentín Sillero (se abre en una pestaña nueva)">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+            </a>
+            <button class="icon-btn" type="button" data-theme-toggle aria-label="Cambiar a modo oscuro">
+              <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+              <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+            </button>
+            <a class="btn btn-primary btn-sm" href="#contacto">Contactarme</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- 02 · HERO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-meta mono" aria-hidden="false">
+          <span>Portfolio · 2026</span>
+          <span class="hero-meta-sep" aria-hidden="true"></span>
+          <span class="hero-location">
+            <svg class="icon icon-xs" aria-hidden="true"><use href="#i-pin"/></svg>
+            Entre Ríos, Argentina · <abbr title="Hora de Argentina, UTC menos 3">UTC−3</abbr>
+            <time class="hero-clock" data-clock aria-label="Hora local en Argentina"></time>
+          </span>
+        </div>
+
+        <div class="hero-main">
+          <div class="hero-copy">
+            <!-- PENDIENTE: si confirmás disponibilidad, cambiar el texto por "Disponible para nuevos proyectos" -->
+            <a class="badge badge-status" href="#contacto">
+              <span class="status-dot" aria-hidden="true"></span>
+              Consultá mi disponibilidad
+            </a>
+
+            <h1 class="hero-title" id="hero-title">
+              <span class="hero-name">Valentín Sillero</span>
+              <span class="hero-role">Desarrollador Web <span class="accent">&amp;</span> Software</span>
+            </h1>
+
+            <p class="hero-lead">
+              Desarrollo experiencias digitales, sitios web y soluciones de software que transforman ideas en productos funcionales, modernos y escalables.
+            </p>
+
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#proyectos">
+                Ver proyectos
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+              <a class="btn btn-secondary" href="#contacto">Contactarme</a>
+            </div>
+          </div>
+
+          <figure class="hero-visual">
+            <div class="frame">
+              <div class="frame-bar" aria-hidden="true"><span></span><span></span><span></span><em class="mono">rebord-inmobiliaria.vercel.app</em></div>
+              <img src="/assets/img/projects/rebord-home-720.webp" width="720" height="450" alt="Página de inicio del sitio de Rebord Negocios Inmobiliarios con buscador de propiedades" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="mono">
+              <span>Último proyecto para cliente</span>
+              <a href="#proyecto-rebord">Rebord · 2026</a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <dl class="hero-specs">
+          <div><dt class="mono">Enfoque</dt><dd>Desarrollo web + experiencia de usuario</dd></div>
+          <div><dt class="mono">Stack frecuente</dt><dd>Next.js · TypeScript · PostgreSQL</dd></div>
+          <div><dt class="mono">Formación</dt><dd>Lic. en Sistemas de Información — UADER</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 03 · MÉTRICAS / HIGHLIGHTS -->
+    <section class="section section-tight" id="metricas" aria-labelledby="metricas-title">
+      <div class="container">
+        <h2 class="sr-only" id="metricas-title">Datos destacados</h2>
+        <ul class="metrics" role="list">
+          <li class="metric reveal">
+            <p class="metric-value"><span data-count="3">3</span></p>
+            <p class="metric-label">Proyectos publicados y presentados en este portfolio</p>
+            <p class="metric-source mono">Rebord · DEETA · Cubrí</p>
+          </li>
+          <li class="metric reveal">
+            <p class="metric-value"><span data-count="400">400</span></p>
+            <p class="metric-label">Propiedades en el catálogo web que desarrollé para Rebord</p>
+            <p class="metric-source mono">Dato público del sitio · nov 2026</p>
+          </li>
+          <li class="metric reveal">
+            <p class="metric-value"><span data-count="18">18</span></p>
+            <p class="metric-label">Tecnologías y herramientas aplicadas en mis proyectos</p>
+            <p class="metric-source mono">Detalle en Habilidades</p>
+          </li>
+          <li class="metric reveal">
+            <p class="metric-value"><span data-count="25">25</span></p>
+            <p class="metric-label">Repositorios públicos de proyectos y prácticas</p>
+            <p class="metric-source mono">github.com/ValentinSillero</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 07 · SOBRE MÍ (se ubica antes de Habilidades: ver justificación en docs/02-arquitectura-informacion.md) -->
+    <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow mono"><span>01</span> Sobre mí</p>
+          <h2 class="section-title" id="sobre-mi-title">Diseño y código, pensados para las personas que los usan.</h2>
+        </header>
+
+        <div class="about">
+          <figure class="portrait reveal">
+            <!-- PENDIENTE: reemplazar este placeholder por una fotografía real (assets/img/valentin.webp, 640×800) -->
+            <div class="portrait-placeholder" role="img" aria-label="Espacio reservado para el retrato de Valentín Sillero">
+              <span class="portrait-initials" aria-hidden="true">VS</span>
+              <span class="portrait-note mono" aria-hidden="true">Retrato · próximamente</span>
+            </div>
+            <figcaption class="mono">Valentín Sillero — Entre Ríos, AR</figcaption>
+          </figure>
+
+          <div class="about-copy reveal">
+            <p class="about-lead">Soy Valentín Sillero, estudiante de la Licenciatura en Sistemas de Información y desarrollador de soluciones digitales.</p>
+            <p>Me interesa transformar ideas y necesidades reales en aplicaciones web funcionales, intuitivas y visualmente cuidadas.</p>
+            <p>Disfruto trabajar tanto en el desarrollo técnico como en la experiencia de usuario, buscando que cada proyecto combine diseño, rendimiento y facilidad de uso.</p>
+
+            <ul class="principles" role="list">
+              <li class="principle">
+                <svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>
+                <h3>Diseño centrado en el usuario</h3>
+                <p>Parto de lo que la persona necesita encontrar o resolver, y ordeno la interfaz alrededor de eso.</p>
+              </li>
+              <li class="principle">
+                <svg class="icon" aria-hidden="true"><use href="#i-blocks"/></svg>
+                <h3>Desarrollo funcional y mantenible</h3>
+                <p>Código claro, componentes reutilizables y decisiones técnicas que se puedan sostener en el tiempo.</p>
+              </li>
+              <li class="principle">
+                <svg class="icon" aria-hidden="true"><use href="#i-loop"/></svg>
+                <h3>Mejora continua</h3>
+                <p>Publico, observo cómo se usa y ajusto. Cada proyecto deja aprendizajes para el siguiente.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · SKILLS / HABILIDADES -->
+    <section class="section section-alt" id="habilidades" aria-labelledby="habilidades-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow mono"><span>02</span> Habilidades</p>
+          <h2 class="section-title" id="habilidades-title">Herramientas que uso para pasar de la idea al producto publicado.</h2>
+          <p class="section-intro">Tecnologías aplicadas en proyectos reales y en la facultad. Sin porcentajes: el nivel se ve en los proyectos.</p>
+        </header>
+
+        <ul class="skills" role="list">
+          <li class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
+              <span class="mono skill-index">A</span>
+            </div>
+            <h3>Frontend</h3>
+            <p>Interfaces responsive, accesibles y rápidas, desde HTML semántico hasta aplicaciones con React y Next.js.</p>
+            <ul class="tags" role="list" aria-label="Tecnologías de frontend">
+              <li class="tag">HTML5</li><li class="tag">CSS3</li><li class="tag">JavaScript</li><li class="tag">TypeScript</li><li class="tag">React</li><li class="tag">Next.js</li><li class="tag">Tailwind CSS</li>
+            </ul>
+          </li>
+          <li class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-db"/></svg></span>
+              <span class="mono skill-index">B</span>
+            </div>
+            <h3>Backend y bases de datos</h3>
+            <p>Modelado de datos, APIs y persistencia para que el producto funcione con información real.</p>
+            <ul class="tags" role="list" aria-label="Tecnologías de backend y bases de datos">
+              <li class="tag">PostgreSQL</li><li class="tag">Neon</li><li class="tag">TypeORM</li><li class="tag">APIs REST</li>
+            </ul>
+          </li>
+          <li class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-tool"/></svg></span>
+              <span class="mono skill-index">C</span>
+            </div>
+            <h3>Herramientas y despliegue</h3>
+            <p>Versionado, pruebas de APIs, gestión de imágenes y publicación continua en la nube.</p>
+            <ul class="tags" role="list" aria-label="Herramientas y despliegue">
+              <li class="tag">Git</li><li class="tag">GitHub</li><li class="tag">VS Code</li><li class="tag">Vercel</li><li class="tag">Figma</li><li class="tag">Postman</li><li class="tag">Cloudinary</li>
+            </ul>
+          </li>
+          <li class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-layout"/></svg></span>
+              <span class="mono skill-index">D</span>
+            </div>
+            <h3>Diseño UX/UI</h3>
+            <p>Estructura, prototipos e interfaces que hacen que un producto sea fácil de entender y usar.</p>
+            <ul class="tags" role="list" aria-label="Habilidades de diseño UX/UI">
+              <li class="tag">Diseño responsive</li><li class="tag">Prototipado</li><li class="tag">Diseño de interfaces</li><li class="tag">Arquitectura de información</li><li class="tag">Experiencia de usuario</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 05 · PROYECTOS -->
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <header class="section-head section-head-row">
+          <div>
+            <p class="eyebrow mono"><span>03</span> Proyectos</p>
+            <h2 class="section-title" id="proyectos-title">Trabajo real, publicado y en uso.</h2>
+          </div>
+          <p class="section-intro">Un desarrollo para cliente, un producto propio y un proyecto académico de UX/UI. Todas las capturas son de las versiones publicadas.</p>
+        </header>
+
+        <div class="projects">
+          <!-- Proyecto destacado -->
+          <article class="project project-featured reveal" id="proyecto-rebord" aria-labelledby="p-rebord-title">
+            <a class="project-media" href="/caso-rebord.html" tabindex="-1" aria-hidden="true">
+              <div class="frame">
+                <div class="frame-bar"><span></span><span></span><span></span><em class="mono">rebord-inmobiliaria.vercel.app/propiedades</em></div>
+                <img src="/assets/img/projects/rebord-catalogo-1200.webp" srcset="/assets/img/projects/rebord-catalogo-720.webp 720w, /assets/img/projects/rebord-catalogo-1200.webp 1200w" sizes="(min-width: 1024px) 680px, 100vw" width="1200" height="750" loading="lazy" decoding="async" alt="">
+              </div>
+            </a>
+            <div class="project-body">
+              <p class="project-meta mono"><span class="pill pill-accent">Cliente real</span><span>2026</span><span>Plataforma inmobiliaria</span></p>
+              <h3 class="project-title" id="p-rebord-title">Rebord Negocios Inmobiliarios</h3>
+              <p class="project-desc">Plataforma inmobiliaria para una inmobiliaria de Colón, Entre Ríos: catálogo moderno con filtros de búsqueda, fichas detalladas y consulta directa por WhatsApp.</p>
+              <dl class="project-facts">
+                <div><dt>Problema</dt><dd>Muchas propiedades sin un lugar ordenado donde buscarlas, compararlas y consultar por ellas.</dd></div>
+                <div><dt>Resultado</dt><dd>Catálogo publicado con filtros por operación, tipo, ubicación y precio, paginación y contacto en un toque.</dd></div>
+              </dl>
+              <ul class="tags" role="list" aria-label="Tecnologías de Rebord">
+                <li class="tag">Next.js</li><li class="tag">TypeScript</li><li class="tag">Tailwind CSS</li><li class="tag">PostgreSQL</li><li class="tag">Neon</li><li class="tag">TypeORM</li><li class="tag">Cloudinary</li><li class="tag">Vercel</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="/caso-rebord.html">
+                  Ver caso de estudio
+                  <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+                <a class="btn btn-secondary" href="https://rebord-inmobiliaria.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  Visitar sitio
+                  <svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg>
+                  <span class="sr-only">(se abre en una pestaña nueva)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" id="proyecto-deeta" aria-labelledby="p-deeta-title">
+            <button class="project-media" type="button" data-dialog-open="dialog-deeta" tabindex="-1" aria-hidden="true">
+              <div class="frame">
+                <div class="frame-bar"><span></span><span></span><span></span><em class="mono">deetaia.vercel.app</em></div>
+                <img src="/assets/img/projects/deeta-home-720.webp" srcset="/assets/img/projects/deeta-home-720.webp 720w, /assets/img/projects/deeta-home-1200.webp 1200w" sizes="(min-width: 1024px) 560px, 100vw" width="1200" height="750" loading="lazy" decoding="async" alt="">
+              </div>
+            </button>
+            <div class="project-body">
+              <p class="project-meta mono"><span class="pill pill-violet">Producto propio</span><span>2026</span><span>SaaS · Beta</span></p>
+              <h3 class="project-title" id="p-deeta-title">DEETA — Sistema de gestión comercial</h3>
+              <p class="project-desc">Plataforma de gestión comercial para que pequeños negocios organicen ventas, stock, caja y gastos, y tomen decisiones con sus propios datos.</p>
+              <dl class="project-facts">
+                <div><dt>Problema</dt><dd>Comercios chicos que llevan ventas y stock en cuadernos o planillas sueltas, sin ver su rentabilidad real.</dd></div>
+                <div><dt>Aprendizaje</dt><dd>Diseñar un producto propio de punta a punta: mobile-first, autenticación, datos y un asistente con IA.</dd></div>
+              </dl>
+              <ul class="tags" role="list" aria-label="Tecnologías de DEETA">
+                <li class="tag">Next.js</li><li class="tag">TypeScript</li><li class="tag">Tailwind CSS</li><li class="tag">PostgreSQL</li><li class="tag">Neon</li><li class="tag">TypeORM</li><li class="tag">Better Auth</li><li class="tag">IA</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn btn-primary" type="button" data-dialog-open="dialog-deeta" aria-haspopup="dialog">Ver detalles</button>
+                <a class="btn btn-secondary" href="https://deetaia.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  Visitar sitio
+                  <svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg>
+                  <span class="sr-only">(se abre en una pestaña nueva)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" id="proyecto-cubri" aria-labelledby="p-cubri-title">
+            <button class="project-media" type="button" data-dialog-open="dialog-cubri" tabindex="-1" aria-hidden="true">
+              <div class="frame">
+                <div class="frame-bar"><span></span><span></span><span></span><em class="mono">contratacionseguros.vercel.app</em></div>
+                <img src="/assets/img/projects/cubri-cotizar-720.webp" srcset="/assets/img/projects/cubri-cotizar-720.webp 720w, /assets/img/projects/cubri-cotizar-1200.webp 1200w" sizes="(min-width: 1024px) 560px, 100vw" width="1200" height="750" loading="lazy" decoding="async" alt="">
+              </div>
+            </button>
+            <div class="project-body">
+              <p class="project-meta mono"><span class="pill">Académico UX/UI</span><span>2026</span><span>Flujo de contratación</span></p>
+              <h3 class="project-title" id="p-cubri-title">Cubrí Seguros</h3>
+              <p class="project-desc">Simulación del proceso de contratación digital de un seguro de celular: cotización, elección de plan, datos, pago simulado y confirmación de póliza.</p>
+              <dl class="project-facts">
+                <div><dt>Problema</dt><dd>Contratar un seguro suele implicar formularios largos y confusos que hacen abandonar el proceso.</dd></div>
+                <div><dt>Aprendizaje</dt><dd>Flujos multipaso con progreso visible, validación de formularios y resumen siempre a la vista.</dd></div>
+              </dl>
+              <ul class="tags" role="list" aria-label="Tecnologías de Cubrí Seguros">
+                <li class="tag">HTML5</li><li class="tag">Tailwind CSS</li><li class="tag">Basecoat UI</li><li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn btn-primary" type="button" data-dialog-open="dialog-cubri" aria-haspopup="dialog">Ver detalles</button>
+                <a class="btn btn-secondary" href="https://contratacionseguros.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  Visitar sitio
+                  <svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg>
+                  <span class="sr-only">(se abre en una pestaña nueva)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 · EXPERIENCIA / FORMACIÓN -->
+    <section class="section section-alt" id="experiencia" aria-labelledby="experiencia-title">
+      <div class="container split">
+        <header class="section-head">
+          <p class="eyebrow mono"><span>04</span> Experiencia y formación</p>
+          <h2 class="section-title" id="experiencia-title">Un recorrido que combina facultad, clientes y producto propio.</h2>
+        </header>
+
+        <ol class="timeline" role="list">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <p class="timeline-period mono"><span>2026</span><span class="pill pill-accent">Cliente</span></p>
+              <h3>Desarrollador web — proyecto para cliente</h3>
+              <p class="timeline-org">Rebord Negocios Inmobiliarios · Colón, Entre Ríos</p>
+              <ul class="timeline-achievements">
+                <li>Diseñé y desarrollé el catálogo web con filtros por operación, tipo, ubicación y precio, más fichas con galería de fotos.</li>
+                <li>Integré consultas por WhatsApp desde cada propiedad y optimicé las imágenes con Cloudinary para una carga más liviana.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <p class="timeline-period mono"><span>2026</span><span class="pill pill-violet">Producto</span></p>
+              <h3>Fundador y desarrollador — DEETA</h3>
+              <p class="timeline-org">Producto propio · SaaS de gestión comercial (beta pública)</p>
+              <ul class="timeline-achievements">
+                <li>Construí los módulos de ventas con escáner de códigos por cámara, control de stock, caja y gastos.</li>
+                <li>Sumé un asistente con IA que responde preguntas en lenguaje natural sobre los datos del propio negocio.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <!-- PENDIENTE: agregar año de ingreso a la carrera (ej. "2025 — Actualidad") -->
+              <p class="timeline-period mono"><span>En curso</span><span class="pill">Formación</span></p>
+              <h3>Licenciatura en Sistemas de Información</h3>
+              <p class="timeline-org">Universidad Autónoma de Entre Ríos — Facultad de Ciencia y Tecnología</p>
+              <ul class="timeline-achievements">
+                <li>Diseño UX/UI: proyecto Cubrí Seguros, un flujo de contratación digital con prototipo y validación de formularios.</li>
+                <li>Algoritmos y estructuras de datos en Python: pilas, colas, listas, árboles y grafos (repositorios públicos 2026).</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <!-- PENDIENTE: confirmar la institución donde se realizaron estos cursos -->
+              <p class="timeline-period mono"><span>2023 — 2024</span><span class="pill">Formación</span></p>
+              <h3>Formación complementaria en desarrollo web</h3>
+              <p class="timeline-org">Cursos de desarrollo web · entregas publicadas en GitHub</p>
+              <ul class="timeline-achievements">
+                <li>Recorrido completo de frontend: maquetación con SASS y SEO, JavaScript y aplicaciones con React.</li>
+                <li>Primeros pasos en backend con Node.js y un sitio web para un supermercado (Rincón Sanducero, 2024).</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 08 · CONTACTO -->
+    <section class="section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="contact reveal">
+          <div class="contact-grid-bg" aria-hidden="true"></div>
+          <div class="contact-copy">
+            <p class="eyebrow mono"><span>05</span> Contacto</p>
+            <h2 class="contact-title" id="contacto-title">¿Tenés un proyecto en mente?</h2>
+            <p class="contact-lead">Si necesitás un sitio web, una aplicación o querés transformar una idea en una solución digital, podemos conversar.</p>
+            <div class="contact-ctas">
+              <!-- PENDIENTE: reemplazar EMAIL_PENDIENTE por el email real en los 3 lugares de este archivo -->
+              <a class="btn btn-light" href="mailto:EMAIL_PENDIENTE">
+                <svg class="icon icon-sm" aria-hidden="true"><use href="#i-mail"/></svg>
+                Escribirme un email
+              </a>
+              <button class="btn btn-ghost-light" type="button" data-copy="EMAIL_PENDIENTE">
+                <svg class="icon icon-sm" aria-hidden="true" data-copy-icon><use href="#i-copy"/></svg>
+                <span data-copy-label>Copiar email</span>
+              </button>
+              <span class="sr-only" role="status" aria-live="polite" data-copy-status></span>
+            </div>
+          </div>
+
+          <ul class="contact-list" role="list">
+            <li>
+              <a class="contact-link" href="mailto:EMAIL_PENDIENTE">
+                <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                <span><span class="contact-label mono">Email</span><span class="contact-value">EMAIL_PENDIENTE</span></span>
+                <svg class="icon icon-sm contact-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+            </li>
+            <li>
+              <!-- PENDIENTE: reemplazar LINKEDIN_PENDIENTE por la URL real del perfil -->
+              <a class="contact-link" href="https://www.linkedin.com/in/LINKEDIN_PENDIENTE" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
+                <span><span class="contact-label mono">LinkedIn</span><span class="contact-value">Valentín Sillero</span></span>
+                <svg class="icon icon-sm contact-arrow" aria-hidden="true"><use href="#i-external"/></svg>
+                <span class="sr-only">(se abre en una pestaña nueva)</span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-link" href="https://github.com/ValentinSillero" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+                <span><span class="contact-label mono">GitHub</span><span class="contact-value">@ValentinSillero</span></span>
+                <svg class="icon icon-sm contact-arrow" aria-hidden="true"><use href="#i-external"/></svg>
+                <span class="sr-only">(se abre en una pestaña nueva)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 09 · FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#inicio">
+          <span class="brand-mark" aria-hidden="true">VS</span>
+          <span class="brand-name">Valentín Sillero</span>
+        </a>
+        <p class="footer-tagline">Desarrollador Web &amp; Software · Entre Ríos, Argentina</p>
+      </div>
+      <nav class="footer-nav" aria-label="Secciones (pie de página)">
+        <ul role="list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <ul class="footer-social" role="list">
+        <li><a class="icon-btn" href="https://github.com/ValentinSillero" target="_blank" rel="noopener noreferrer" aria-label="GitHub (se abre en una pestaña nueva)"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+        <li><a class="icon-btn" href="https://www.linkedin.com/in/LINKEDIN_PENDIENTE" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (se abre en una pestaña nueva)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+        <li><a class="icon-btn" href="mailto:EMAIL_PENDIENTE" aria-label="Enviar un email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+      </ul>
+      <div class="footer-bottom mono">
+        <p>© <span data-year>2026</span> Valentín Sillero. Todos los derechos reservados.</p>
+        <p>Hecho con HTML5, CSS3 y JavaScript vanilla · Tipografía Geist · Desplegado en Vercel</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Detalle de proyectos (modales accesibles con <dialog>) -->
+  <dialog class="dialog" id="dialog-deeta" aria-labelledby="dialog-deeta-title">
+    <div class="dialog-inner">
+      <header class="dialog-head">
+        <div>
+          <p class="mono dialog-kicker">Producto propio · 2026 · Beta</p>
+          <h2 id="dialog-deeta-title">DEETA — Sistema de gestión comercial</h2>
+        </div>
+        <button class="icon-btn" type="button" data-dialog-close aria-label="Cerrar detalles de DEETA"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </header>
+      <div class="dialog-body">
+        <div class="dialog-shots">
+          <img src="/assets/img/projects/deeta-home-720.webp" width="720" height="450" loading="lazy" decoding="async" alt="Inicio de DEETA: titular “Tu negocio en orden” y tarjeta de ejemplo con ventas del día">
+          <img class="shot-mobile" src="/assets/img/projects/deeta-mobile-360.webp" width="360" height="720" loading="lazy" decoding="async" alt="DEETA en un celular, con la misma propuesta adaptada a pantalla chica">
+        </div>
+        <p>DEETA es un producto propio: una plataforma para que kioscos, almacenes, ferreterías y otros comercios minoristas simplifiquen su administración diaria y entiendan su negocio con datos.</p>
+        <h3>Funcionalidades</h3>
+        <ul class="check-list">
+          <li>Gestión de productos con importación desde Excel/CSV.</li>
+          <li>Control de stock con mínimos y alertas.</li>
+          <li>Registro de ventas con varios medios de pago.</li>
+          <li>Escaneo de códigos de barras con la cámara del celular.</li>
+          <li>Caja: apertura, cierre y control de diferencias.</li>
+          <li>Gastos por categoría, margen y resultado estimado.</li>
+          <li>Estadísticas comerciales y productos más vendidos.</li>
+          <li>DEETA AI: preguntas en lenguaje natural sobre los datos del negocio.</li>
+        </ul>
+        <p class="note">Funcionalidades descriptas según la landing pública de DEETA (beta gratuita). La disponibilidad de cada módulo puede variar durante la beta.</p>
+      </div>
+      <footer class="dialog-foot">
+        <a class="btn btn-primary" href="https://deetaia.vercel.app/" target="_blank" rel="noopener noreferrer">Abrir DEETA <svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+        <button class="btn btn-secondary" type="button" data-dialog-close>Cerrar</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="dialog" id="dialog-cubri" aria-labelledby="dialog-cubri-title">
+    <div class="dialog-inner">
+      <header class="dialog-head">
+        <div>
+          <p class="mono dialog-kicker">Proyecto académico UX/UI · 2026</p>
+          <h2 id="dialog-cubri-title">Cubrí Seguros</h2>
+        </div>
+        <button class="icon-btn" type="button" data-dialog-close aria-label="Cerrar detalles de Cubrí Seguros"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </header>
+      <div class="dialog-body">
+        <div class="dialog-shots">
+          <img src="/assets/img/projects/cubri-home-720.webp" width="720" height="450" loading="lazy" decoding="async" alt="Inicio de Cubrí Seguros con el titular “Protegé lo que más usás en menos de 3 minutos” y tarjetas de tipos de seguro">
+          <img class="shot-mobile" src="/assets/img/projects/cubri-mobile-360.webp" width="360" height="720" loading="lazy" decoding="async" alt="Cubrí Seguros en un celular">
+        </div>
+        <p>Aplicación web que simula la contratación digital de un seguro de celular, desarrollada para la materia Diseño UX/UI. El foco estuvo en que el flujo se entienda sin ayuda y que cada paso valide los datos antes de avanzar.</p>
+        <h3>Funcionalidades</h3>
+        <ul class="check-list">
+          <li>Cotización dinámica según marca, modelo, valor y antigüedad.</li>
+          <li>Selección de planes.</li>
+          <li>Formularios validados con mensajes claros.</li>
+          <li>Flujo multipaso con indicador de progreso: Cotizar → Plan → Datos → Pago.</li>
+          <li>Pago simulado y confirmación de póliza.</li>
+          <li>Diseño responsive para mobile y desktop.</li>
+        </ul>
+      </div>
+      <footer class="dialog-foot">
+        <a class="btn btn-primary" href="https://contratacionseguros.vercel.app/" target="_blank" rel="noopener noreferrer">Abrir Cubrí <svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+        <button class="btn btn-secondary" type="button" data-dialog-close>Cerrar</button>
+      </footer>
+    </div>
+  </dialog>
+</body>
+</html>

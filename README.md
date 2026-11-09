@@ -49,7 +49,7 @@ Caso de estudio: ![Caso de estudio Rebord](docs/img/caso-desktop.png)
     ├── 03-wireframes.md         Wireframes mobile y desktop
     ├── 04-design-system.md      Paleta, tipografía, espaciado, grilla, componentes
     ├── 05-figma.md              Qué contiene el archivo de Figma
-    ├── 06-test-usabilidad.md    Guion y plantilla (pendiente de realizar)
+    ├── 06-test-usabilidad.md    Guion, test con 3 personas, hallazgos y cambios aplicados
     ├── 07-commits-y-despliegue.md  Plan de commits y pasos de deploy
     ├── PENDIENTES.md            Lo que falta antes de entregar
     ├── design/                  Fuentes HTML de moodboard, wireframes y design system
@@ -86,7 +86,8 @@ Abrir `http://localhost:5173`. (Las rutas son absolutas, `/assets/...`, por eso 
 - **Sin scripts inline:** el tema se aplica con `theme.js` en el `<head>` (evita el parpadeo) y permite `script-src 'self'`.
 - **Accesibilidad:** un solo `h1`, jerarquía sin saltos, link “Saltar al contenido”, foco visible, menú con `aria-expanded`/`aria-controls`, cierre con Esc y foco atrapado, `<dialog>` nativo para los modales, `aria-current` en la navegación, contraste AA verificado en modo claro y oscuro, `prefers-reduced-motion` y `forced-colors`.
 - **Caso de estudio en página propia** (no modal): compartible, indexable y legible con calma. DEETA y Cubrí tienen un modal de detalle.
-- **Datos honestos:** cada métrica indica su fuente; lo que no se pudo verificar o hacer (test de usabilidad, foto, email, LinkedIn) está marcado como pendiente en vez de inventado.
+- **Datos honestos:** cada métrica indica su fuente, y lo que no se registró (por ejemplo, tiempos en el test de usabilidad) se aclara en vez de inventarse.
+- **Validación con usuarios:** test con 3 personas (computadora y celular) sobre el sitio publicado; sus tres hallazgos se aplicaron (contacto visible en mobile, tarjetas más breves y acciones de proyecto diferenciadas). Detalle en [`docs/06-test-usabilidad.md`](docs/06-test-usabilidad.md).
 - **Bonus de la rúbrica:** modo oscuro/claro con toggle y `prefers-color-scheme`, página 404 propia, headers de seguridad, animaciones accesibles.
 
 ## Resultados de Lighthouse (mobile)
@@ -127,7 +128,7 @@ Siguiendo la política de la cátedra, declaro que usé **Claude (Anthropic) med
 - Revisé el resultado y pedí correcciones: que el historial de Git se organizara en commits honestos y sin etapas inventadas, y que la autoría de los commits quedara a mi nombre.
 - Creé el repositorio público en GitHub y configuré el despliegue en Vercel.
 
-Los datos de proyectos y métricas se tomaron de fuentes verificables (sitios publicados y GitHub). Lo que todavía no se hizo, como el test de usabilidad con personas, figura como pendiente: nada se presenta como resultado de investigación o test sin haberse realizado.
+Los datos de proyectos y métricas se tomaron de fuentes verificables (sitios publicados y GitHub). El test de usabilidad lo realicé con tres personas (un compañero de la facultad, un familiar y un amigo) y documenté solo lo que se registró: nada se presenta como resultado de investigación o test sin haberse realizado.
 
 ## Licencia
 

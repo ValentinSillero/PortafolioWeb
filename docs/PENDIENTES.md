@@ -11,7 +11,7 @@ Ordenados por prioridad. Lo obligatorio primero.
 - [x] **URL definitiva** cargada en canonical, Open Graph, `robots.txt`, `sitemap.xml` y README.
 - [x] **Lighthouse sobre la URL publicada** — 100/100/100/100 en `/` y en el caso de estudio (`docs/lighthouse/lighthouse-mobile-vercel-*.png`).
 - [x] **Figma: compartido** con “Anyone with the link · can view” (verificado en una ventana de incógnito).
-- [ ] **Test de usabilidad con 3 personas** — guion y plantilla en `06-test-usabilidad.md`. Completar hallazgos y cambios aplicados, y actualizar la slide 9 de la presentación (`presentacion/presentacion.html`, exportar a PDF de nuevo).
+- [x] **Test de usabilidad con 3 personas** — realizado el 9/11/2026 (compañero de facultad en computadora, familiar y amigo en celular). 3 hallazgos aplicados; documentado en `06-test-usabilidad.md` y en la slide 9.
 - [x] **README → Uso de IA:** revisión humana redactada a partir de lo que hiciste en el proyecto. Leela y agregá cualquier otra prueba o ajuste que hayas hecho vos (por ejemplo, revisarlo en tu celular).
 
 ## Recomendado

@@ -44,4 +44,4 @@ Flujos de inicio: **Desktop** y **Mobile** (Present ▶).
 - [x] Compartido con “Anyone with the link · can view” (verificado sin sesión iniciada).
 - [x] Capturas del prototipo (Desktop · Home y Mobile · Home) actualizadas a la versión actual del sitio, con foto y badge “Disponible” (revisado por Valentín en Figma).
 - [ ] Comparación lado a lado Figma / sitio de 2 secciones (sugerencia del docente para la presentación).
-- [ ] Si el test de usabilidad se hace sobre el prototipo, registrar en `06-test-usabilidad.md` que se usó este archivo.
+- [x] El test de usabilidad se hizo sobre el sitio publicado (no sobre el prototipo); los cambios que surgieron se aplicaron en el sitio después de armar el prototipo.

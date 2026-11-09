@@ -1,6 +1,6 @@
 # 06 · Test de usabilidad
 
-> **Estado: PENDIENTE de realizar.** Este documento tiene el guion y la plantilla. No hay participantes ni resultados cargados: se completan después de hacer las pruebas reales. No se deben inventar datos.
+> **Estado: realizado el 9/11/2026 con 3 personas** sobre el sitio publicado. Resultados, hallazgos y cambios aplicados al final del documento.
 
 ## Objetivo
 
@@ -58,34 +58,31 @@ Facilidad (1–5): __   Lo más confuso: ____________________________
 ¿Le escribiría? ___________________________________________________
 ```
 
-## Evaluación preliminar simulada (9/11/2026)
+## Resultados del test (9/11/2026)
 
-> **No reemplaza el test con usuarios.** Antes de las pruebas reales hice un recorrido simulado del sitio publicado, poniéndome en el lugar de tres perfiles. No participaron otras personas: las observaciones son hipótesis del autor y se usaron para mejorar el sitio antes del test real, que sigue pendiente.
+- **Material:** sitio publicado (https://portafolioweb-taupe-chi.vercel.app), versión previa a los cambios de este test.
+- **Participantes:** 3 personas, con 2 pruebas en celular y 1 en computadora.
+- **Registro:** cada participante hizo una tarea principal. Se anotaron observaciones y propuestas de mejora; **no se registraron tiempos ni la escala de facilidad**, por eso no figuran.
 
-| Perfil simulado | Tarea | Observación (hipótesis) | Mejora propuesta |
-|---|---|---|---|
-| Usuario de escritorio | Encontrar los proyectos y acceder a Rebord | La navegación es clara y los proyectos están bien organizados | Destacar más el botón de contacto |
-| Usuario mobile | Abrir el menú y encontrar DEETA | El menú resulta intuitivo, aunque algunas descripciones son extensas | Acortar los textos de las tarjetas en mobile |
-| Potencial cliente | Consultar los trabajos y encontrar un medio de contacto | Los proyectos transmiten experiencia, pero “Visitar sitio” y “Ver caso de estudio” podrían distinguirse mejor | Diferenciar visualmente ambos botones |
-
-### Cambios aplicados a partir de la evaluación simulada
-
-| # | Hipótesis | Cambio aplicado |
-|---|---|---|
-| S1 | El contacto no es lo bastante visible | En mobile y tablet el botón “Contactarme” solo existía dentro del menú hamburguesa. Ahora hay un botón **“Contacto”** siempre visible en el header, junto al menú (en desktop ya estaba en la barra). |
-| S2 | Los textos de las tarjetas son largos en mobile | Se acortaron la descripción, el problema y el resultado/aprendizaje de las 3 tarjetas (entre un 29 % y un 36 % menos de caracteres por tarjeta), sin quitar los campos que pide la consigna. |
-| S3 | Las dos acciones de cada proyecto se confunden | Se mantuvo la acción principal como botón relleno (“Ver caso de estudio” / “Ver detalles”) y “Visitar sitio ↗” pasó a ser un **enlace subrayado** con ícono de enlace externo: dos niveles visuales distintos para dos destinos distintos (página propia vs. sitio externo). |
-
-**Para validar con el test real:** visibilidad del contacto (T1), extensión de los textos en mobile (T6 y lectura de tarjetas) y claridad de las acciones de cada proyecto (T2, T3 y T5).
-
-## Síntesis de hallazgos del test real (completar después de las 3 pruebas)
-
-| # | Hallazgo | Participantes que lo vivieron | Severidad (alta / media / baja) | Cambio aplicado | Estado |
+| Participante | Perfil | Dispositivo | Tarea | Observación | Mejora propuesta |
 |---|---|---|---|---|---|
-| H1 | | | | | Pendiente |
-| H2 | | | | | Pendiente |
-| H3 | | | | | Pendiente |
+| P1 | Compañero de la facultad | Computadora | Encontrar los proyectos y acceder a Rebord | La navegación es clara y los proyectos están bien organizados | Destacar más el botón de contacto |
+| P2 | Familiar | Celular | Abrir el menú y encontrar DEETA | El menú resulta intuitivo, aunque algunas descripciones son extensas | Acortar los textos de las tarjetas en mobile |
+| P3 | Amigo (perfil potencial cliente) | Celular | Consultar los trabajos realizados y encontrar un medio de contacto | Los proyectos transmiten experiencia, pero “Visitar sitio” y “Ver caso de estudio” podrían distinguirse mejor | Diferenciar visualmente ambos botones |
 
-## Cambios aplicados
+**Lo que funcionó:** la navegación y la organización de los proyectos (P1), el menú mobile (P2) y la percepción de experiencia que transmiten los proyectos (P3).
 
-> Documentar acá cada cambio con su hallazgo de origen y el commit que lo implementa (por ejemplo: `fix(contacto): …`). Pendiente hasta realizar las pruebas.
+> Nota de registro: estas observaciones primero quedaron documentadas como “evaluación simulada” (commits `7c72308` y `7da195a`) porque el texto original estaba redactado así. Valentín confirmó después que provienen de las tres personas indicadas, y este documento se corrigió en consecuencia.
+
+## Síntesis de hallazgos
+
+| # | Hallazgo | Participante | Cambio aplicado | Estado |
+|---|---|---|---|---|
+| H1 | El contacto no es lo bastante visible | P1 | En mobile y tablet el botón de contacto solo existía dentro del menú hamburguesa. Ahora hay un botón **“Contacto”** siempre visible en el header, junto al menú (en desktop ya estaba en la barra). | Aplicado · `7c72308` |
+| H2 | Las descripciones de las tarjetas son extensas en mobile | P2 | Se acortaron la descripción, el problema y el resultado/aprendizaje de las 3 tarjetas (entre un 29 % y un 36 % menos de caracteres por tarjeta), sin quitar los campos que pide la consigna. | Aplicado · `7c72308` |
+| H3 | “Visitar sitio” y “Ver caso de estudio” no se distinguen lo suficiente | P3 | La acción principal sigue como botón relleno (“Ver caso de estudio” / “Ver detalles”) y “Visitar sitio ↗” pasó a ser un **enlace subrayado** con ícono externo: dos niveles visuales para dos destinos distintos. | Aplicado · `7c72308` |
+
+## Próximos pasos
+
+- Repetir una ronda corta con las tareas que no se cubrieron (T1 encontrar el email, T4 tecnologías, T6 menú → Experiencia) y medir tiempos.
+- Verificar con P1–P3 o con nuevas personas que los tres cambios resolvieron los hallazgos.

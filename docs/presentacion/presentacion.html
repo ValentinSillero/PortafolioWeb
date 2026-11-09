@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <title>Proceso UX/UI — Portfolio Valentín Sillero</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <style>
+    @page { size: 1600px 900px; margin: 0; }
+    html { scroll-behavior: auto; }
+    body { margin: 0; background: #ddd; }
+    .slide { width: 1600px; height: 900px; position: relative; overflow: hidden; background: var(--c-bg); padding: 72px 88px; display: grid; grid-template-rows: auto 1fr auto; gap: 32px; page-break-after: always; break-after: page; margin: 0 auto; }
+    .slide + .slide { margin-top: 0; }
+    .s-head { display: flex; justify-content: space-between; align-items: baseline; }
+    .s-num { font-family: var(--font-mono); font-size: 14px; color: var(--c-muted); text-transform: uppercase; letter-spacing: .08em; }
+    .s-title { font-size: 52px; letter-spacing: -.04em; line-height: 1.05; color: var(--c-ink); font-weight: 600; max-width: 1100px; }
+    .s-foot { display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 12px; color: var(--c-muted); text-transform: uppercase; letter-spacing: .06em; border-top: 1px solid var(--c-line); padding-top: 14px; }
+    .s-body { min-height: 0; }
+    .cols { display: grid; gap: 40px; height: 100%; }
+    .card { border: 1px solid var(--c-line); border-radius: 16px; background: var(--c-surface); padding: 24px; }
+    .card h3 { font-size: 22px; margin-bottom: 10px; }
+    .card p, .card li { font-size: 17px; color: var(--c-ink-2); line-height: 1.5; }
+    .card ul { padding-left: 20px; display: grid; gap: 6px; }
+    .lbl { font-family: var(--font-mono); font-size: 12px; color: var(--c-accent); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; display: block; }
+    .img { border: 1px solid var(--c-line); border-radius: 12px; overflow: hidden; background: var(--c-surface); }
+    .img img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .pending { border: 1.5px dashed var(--c-line-strong); background: var(--c-surface-2); }
+    .big { font-size: 22px; color: var(--c-ink-2); line-height: 1.5; }
+    .score { display: grid; place-items: center; width: 120px; height: 120px; border-radius: 50%; border: 6px solid #0CCE6B; font-family: var(--font-mono); font-size: 40px; color: #0A8A4A; margin: 0 auto 10px; }
+    table { border-collapse: collapse; width: 100%; font-size: 16px; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--c-line); vertical-align: top; color: var(--c-ink-2); }
+    th { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--c-muted); font-weight: 500; }
+    .cover { background: var(--c-bg); }
+  </style>
+</head>
+<body>
+
+<!-- 1 · Portada -->
+<section class="slide cover">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="s-head" style="position:relative"><span class="s-num">Trabajo Final · Diseño UX/UI 2026 · LSI — UADER FCyT</span><span class="s-num">01 / 10</span></div>
+  <div style="position:relative;align-self:center">
+    <p class="eyebrow mono"><span>TF</span> Portfolio web personal · Proceso de diseño</p>
+    <h1 style="font-size:150px;line-height:.92;letter-spacing:-.06em;margin-top:28px">Valentín Sillero</h1>
+    <p style="font-size:34px;color:var(--c-ink-2);margin-top:16px;letter-spacing:-.02em">Desarrollador Web <span class="accent">&amp;</span> Software — concepto “Precisión digital”</p>
+  </div>
+  <div class="s-foot" style="position:relative"><span>Docente: Mg. Ernesto Ledesma</span><span>Entrega: 10 de noviembre de 2026</span></div>
+</section>
+
+<!-- 2 · Usuario -->
+<section class="slide">
+  <div class="s-head"><h2 class="s-title">Usuario objetivo y proto-persona</h2><span class="s-num">02 / 10</span></div>
+  <div class="s-body cols" style="grid-template-columns:1fr 1.15fr">
+    <div style="display:grid;gap:20px;align-content:start">
+      <div class="card"><span class="lbl">Usuario primario</span><h3>Cliente potencial</h3><p>Comercio, profesional o pyme de la región. Necesita ver en &lt; 30 s qué hago, un proyecto real parecido a su caso y cómo contactarme.</p></div>
+      <div class="card"><span class="lbl">Secundarios</span><p><b>Reclutador / líder técnico:</b> stack, proyectos publicados, GitHub.<br><b>Docente:</b> 9 secciones, caso de estudio, accesibilidad.</p></div>
+      <div class="card"><span class="lbl">Escenario de uso</span><p>Recibe el link por WhatsApp → abre en el celular → “Ver proyectos” → Rebord (cliente real) → visita el sitio → caso de estudio → “Escribirme un email”. <b>Meta: primer proyecto real en &lt; 30 s.</b></p></div>
+    </div>
+    <div class="card" style="display:grid;gap:14px;align-content:start">
+      <span class="lbl">Proto-persona (supuestos, a validar con el test)</span>
+      <h3 style="font-size:34px;letter-spacing:-.03em">Martín, 42 — dueño de una inmobiliaria en Entre Ríos</h3>
+      <ul>
+        <li><b>Dispositivo:</b> celular, llega por WhatsApp o Instagram.</li>
+        <li><b>Objetivos:</b> saber si puedo resolver lo que necesita; ver algo terminado y funcionando; contactar sin vueltas.</li>
+        <li><b>Frustraciones:</b> jerga técnica; proyectos de práctica que no se parecen a un negocio real; contacto escondido.</li>
+      </ul>
+      <p class="cs-quote" style="margin-top:8px">“No necesito saber qué es Next.js. Necesito ver que ya lo hiciste para alguien como yo.”</p>
+    </div>
+  </div>
+  <div class="s-foot"><span>docs/01-investigacion.md</span><span>Investigación</span></div>
+</section>
+
+<!-- 3 · Benchmark -->
+<section class="slide">
+  <div class="s-head"><h2 class="s-title">Benchmark: 3 portfolios de referencia</h2><span class="s-num">03 / 10</span></div>
+  <div class="s-body cols" style="grid-template-columns:repeat(3,1fr);gap:24px">
+    <div class="card" style="padding:16px;display:grid;gap:12px;align-content:start"><div class="img" style="height:200px"><img src="../img/bench-brittanychiang.webp" alt=""></div><h3>brittanychiang.com</h3><p><b>Funciona:</b> nav por anclas con sección activa, timeline con período y tags, skip link.</p><p><b>No funciona:</b> paleta oscura muy copiada; mucho texto antes de un proyecto; pensado para reclutadores.</p><p><b>Tomo:</b> sección activa y timeline.</p></div>
+    <div class="card" style="padding:16px;display:grid;gap:12px;align-content:start"><div class="img" style="height:200px"><img src="../img/bench-leerob.webp" alt=""></div><h3>leerob.com</h3><p><b>Funciona:</b> velocidad, legibilidad, jerarquía tipográfica, mailto directo.</p><p><b>No funciona:</b> casi no muestra proyectos ni imágenes: un cliente no ve “qué hizo”.</p><p><b>Tomo:</b> aire, sans sobria, contacto visible.</p></div>
+    <div class="card" style="padding:16px;display:grid;gap:12px;align-content:start"><div class="img" style="height:200px"><img src="../img/bench-rauno.webp" alt=""></div><h3>rauno.me</h3><p><b>Funciona:</b> identidad fuerte con pocos recursos; microinteracciones (copiar email).</p><p><b>No funciona:</b> navegación experimental; no comunica servicios ni contacto rápido.</p><p><b>Tomo:</b> copiar email, detalle tipográfico, un solo acento.</p></div>
+  </div>
+  <div class="s-foot"><span>Capturas de las versiones publicadas · noviembre 2026</span><span>Investigación</span></div>
+</section>
+
+<!-- 4 · Moodboard -->
+<section class="slide">
+  <div class="s-head"><h2 class="s-title">Moodboard y concepto: “Precisión digital”</h2><span class="s-num">04 / 10</span></div>
+  <div class="s-body cols" style="grid-template-columns:1.5fr 1fr">
+    <div class="img"><img src="../img/moodboard.png" alt="" style="object-fit:contain;background:var(--c-bg)"></div>
+    <div style="display:grid;gap:16px;align-content:start">
+      <div class="card"><span class="lbl">Innovación</span><p>Un único acento azul eléctrico <b>#2E3BFF</b>; capturas reales de productos digitales en marcos de navegador.</p></div>
+      <div class="card"><span class="lbl">Precisión</span><p>Grilla de plano, líneas de 1 px, índices numerados y <b>Geist Mono</b> para datos. Métricas con su fuente.</p></div>
+      <div class="card"><span class="lbl">Simplicidad</span><p>Fondo blanco cálido <b>#FAFAF7</b>, mucho aire, escala tipográfica corta, íconos de línea, sin gradientes ni emojis.</p></div>
+      <p class="mono" style="font-size:13px;color:var(--c-muted)">Me diferencio de la referencia (oscura navy + verde) con una base clara y cálida.</p>
+    </div>
+  </div>
+  <div class="s-foot"><span>docs/design/moodboard.html</span><span>Concepto visual</span></div>
+</section>
+
+<!-- 5 · Arquitectura -->
+<section class="slide">
+  <div class="s-head"><h2 class="s-title">Arquitectura de información</h2><span class="s-num">05 / 10</span></div>
+  <div class="s-body cols" style="grid-template-columns:1fr 1.2fr">
+    <div class="card" style="font-family:var(--font-mono);font-size:16px;line-height:1.9;color:var(--c-ink)">
+      <span class="lbl">Sitemap · one-page + 2 páginas</span>
+      01 Header sticky + CTA<br>02 #inicio — Hero<br>03 #metricas — Métricas verificables<br><b class="accent">07 #sobre-mi — Sobre mí ↑</b><br>04 #habilidades — 4 categorías<br>05 #proyectos — Rebord · DEETA · Cubrí<br>&nbsp;&nbsp;&nbsp;└ /caso-rebord.html (caso de estudio)<br>06 #experiencia — Timeline<br>08 #contacto — CTA<br>09 Footer &nbsp;·&nbsp; /404.html
+    </div>
+    <div style="display:grid;gap:16px;align-content:start">
+      <div class="card"><span class="lbl">Cambio de orden justificado</span><p><b>Sobre mí sube antes de Habilidades:</b> para un cliente, la confianza personal va antes del detalle técnico. Coincide con el orden del menú.</p></div>
+      <div class="card"><span class="lbl">Navegación</span><p>Header fijo con CTA siempre visible · sección activa · menú hamburguesa accesible · caso de estudio en página propia (compartible) con “Volver” y “Siguiente proyecto”.</p></div>
+      <div class="card"><span class="lbl">Card sorting cerrado (24 tarjetas · 9 categorías)</span><p>Dudas resueltas: <b>Cubrí</b> → Proyectos (y logro en Formación); <b>DEETA</b> → Proyectos (producto) y Experiencia (rol); <b>cantidad de tecnologías</b> → Métricas.</p></div>
+    </div>
+  </div>
+  <div class="s-foot"><span>docs/02-arquitectura-informacion.md</span><span>Arquitectura</span></div>
+</section>
+
+<!-- 6 · Wireframes -->
+<section class="slide">
+  <div class="s-head"><h2 class="s-title">Wireframes de baja fidelidad</h2><span class="s-num">06 / 10</span></div>
+  <div class="s-body cols" style="grid-template-columns:260px 1fr 380px;gap:28px">
+    <div class="img"><img src="../img/wireframe-mobile.png" alt=""></div>
+    <div class="img"><img src="../img/wireframe-desktop.png" alt=""></div>
+    <div style="display:grid;gap:14px;align-content:start">
+      <div class="card"><span class="lbl">Mobile 375 · Desktop 1280</span><p>Página completa con las 9 secciones, generadas desde una misma estructura.</p></div>
+      <div class="card"><span class="lbl">Decisiones fijadas</span><ul><li>Nombre a todo el ancho en el hero.</li><li>Proyecto de cliente real destacado.</li><li>Timeline con título fijo a la izquierda.</li><li>Contacto en bloque oscuro de cierre.</li></ul></div>
+    </div>
+  </div>
+  <div class="s-foot"><span>docs/03-wireframes.md</span><span>Wireframes</span></div>
+</section>
+
+<!-- 7 · Design system -->
+<section class="slide">
+  <div class="s-head"><h2 class="s-title">Design system</h2><span class="s-num">07 / 10</span></div>
+  <div class="s-body cols" style="grid-template-columns:1.7fr 1fr">
+    <div class="img"><img src="../img/design-system.png" alt=""></div>
+    <div style="display:grid;gap:14px;align-content:start">
+      <div class="card"><span class="lbl">Tokens en :root</span><p>Paleta (primario, secundario, neutros, estados) con contraste AA, modo claro y oscuro.</p></div>
+      <div class="card"><span class="lbl">Tipografía</span><p>Geist + Geist Mono (2 familias, auto-hospedadas, <code>font-display: swap</code>). Escala de 12 a 120 px.</p></div>
+      <div class="card"><span class="lbl">Espaciado y grilla</span><p>Base 4 px · 4 / 8 / 12 columnas · breakpoints 640 · 768 · 1024 · 1280.</p></div>
+      <div class="card"><span class="lbl">Componentes</span><p>Botón en 4 estados + disabled · tag · pill · badge · tarjeta de proyecto · ítem de timeline · modal.</p></div>
+    </div>
+  </div>
+  <div class="s-foot"><span>docs/04-design-system.md · assets/css/styles.css</span><span>Design system</span></div>
+</section>
+
+<!-- 8 · Prototipos -->
+<section class="slide">
+  <div class="s-head"><h2 class="s-title">Alta fidelidad: mobile y desktop</h2><span class="s-num">08 / 10</span></div>
+  <div class="s-body cols" style="grid-template-columns:1.9fr 300px 1fr;gap:28px">
+    <div class="img"><img src="../img/sitio-desktop.png" alt=""></div>
+    <div class="img"><img src="../img/sitio-mobile.png" alt=""></div>
+    <div style="display:grid;gap:14px;align-content:start">
+      <div class="card"><span class="lbl">Prototipado</span><p>Navegación por anclas, menú mobile, modales de detalle y caso de estudio. Microinteracciones: hover en tarjetas, sección activa, copiar email, tema oscuro.</p></div>
+      <div class="card"><span class="lbl">Figma</span><p>figma.com/design/3AxCDCuNJOfTUIWiVaQyt2 — 3 páginas: Proceso UX, Design System (variables, estilos y componentes) y Prototipo navegable desktop + mobile con menú overlay.</p></div>
+    </div>
+  </div>
+  <div class="s-foot"><span>Capturas reales del sitio implementado</span><span>Prototipo</span></div>
+</section>
+
+<!-- 9 · Test -->
+<section class="slide">
+  <div class="s-head"><h2 class="s-title">Test de usabilidad</h2><span class="s-num">09 / 10</span></div>
+  <div class="s-body cols" style="grid-template-columns:1.1fr 1fr">
+    <div class="card">
+      <span class="lbl">Guion · 3 participantes · pensar en voz alta</span>
+      <table>
+        <tr><th>#</th><th>Tarea</th></tr>
+        <tr><td>T1</td><td>Encontrá el email de Valentín.</td></tr>
+        <tr><td>T2</td><td>Abrí el sistema DEETA.</td></tr>
+        <tr><td>T3</td><td>Encontrá un proyecto inmobiliario y contá qué problema resolvía.</td></tr>
+        <tr><td>T4</td><td>¿Qué tecnologías usa para el frontend?</td></tr>
+        <tr><td>T5</td><td>Abrí el proyecto más reciente y su caso de estudio.</td></tr>
+        <tr><td>T6</td><td>(Mobile) Usá el menú para ir a Experiencia.</td></tr>
+      </table>
+    </div>
+    <div class="card pending" style="display:grid;align-content:start;gap:14px">
+      <span class="lbl">Hallazgos y cambios aplicados</span>
+      <h3 style="font-size:30px">PENDIENTE — completar con datos reales</h3>
+      <table>
+        <tr><th>Participante</th><th>Éxito T1–T6</th><th>Hallazgo principal</th></tr>
+        <tr><td>P1</td><td>—</td><td>—</td></tr>
+        <tr><td>P2</td><td>—</td><td>—</td></tr>
+        <tr><td>P3</td><td>—</td><td>—</td></tr>
+      </table>
+      <p>Cambios aplicados: — (documentar con su commit)</p>
+    </div>
+  </div>
+  <div class="s-foot"><span>docs/06-test-usabilidad.md</span><span>Validación</span></div>
+</section>
+
+<!-- 10 · Resultado -->
+<section class="slide">
+  <div class="s-head"><h2 class="s-title">Resultado y conclusiones</h2><span class="s-num">10 / 10</span></div>
+  <div class="s-body cols" style="grid-template-columns:1.1fr 1fr">
+    <div style="display:grid;gap:16px;align-content:start">
+      <div class="card"><span class="lbl">Lighthouse mobile · build local · 9 nov 2026</span>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);text-align:center;margin-top:10px">
+          <div><div class="score">98</div><p>Performance</p></div><div><div class="score">100</div><p>Accessibility</p></div><div><div class="score">100</div><p>Best Practices</p></div><div><div class="score">100</div><p>SEO</p></div>
+        </div>
+        <p style="margin-top:10px;font-size:14px;color:var(--c-muted)">Volver a medir sobre la URL publicada en Vercel antes de entregar.</p>
+      </div>
+      <div class="card"><span class="lbl">Entrega</span><p>Sitio: <b>URL de Vercel (pendiente)</b> · Repo: github.com/ValentinSillero/portfolio (pendiente) · Figma: figma.com/design/3AxCDCuNJOfTUIWiVaQyt2</p></div>
+    </div>
+    <div style="display:grid;gap:16px;align-content:start">
+      <div class="card"><span class="lbl">Conclusiones</span><ul>
+        <li>Partir del usuario (un cliente, no solo un reclutador) cambió la jerarquía: proyecto real primero, contacto siempre a mano.</li>
+        <li>Un design system en tokens hizo que diseño, documentación y código fueran la misma fuente.</li>
+        <li>Accesibilidad y rendimiento se diseñan desde el inicio: HTML semántico, contraste AA, fuentes propias e imágenes WebP.</li>
+        <li>Honestidad de datos: métricas con fuente y validación UX marcada como pendiente cuando no se hizo.</li>
+      </ul></div>
+    </div>
+  </div>
+  <div class="s-foot"><span>HTML5 · CSS3 · JavaScript vanilla · Vercel</span><span>Valentín Sillero · 2026</span></div>
+</section>
+
+</body>
+</html>

@@ -114,21 +114,7 @@ Reportes completos en [`docs/lighthouse/`](docs/lighthouse/) (`lh-mobile-vercel-
 
 ## Uso de IA
 
-Siguiendo la política de la cátedra, declaro que usé **Claude (Anthropic) mediante Claude Code** como asistente para:
-
-- Generar el código HTML, CSS y JavaScript a partir de mis indicaciones, contenidos y proyectos reales.
-- Redactar borradores de la documentación UX (investigación, arquitectura, design system, guion de test) y la presentación.
-- Construir el archivo de Figma (variables, estilos, componentes y prototipo) mediante la integración oficial de Figma.
-- Tomar capturas, convertir imágenes y ejecutar Lighthouse.
-
-**Revisión humana y decisiones propias:**
-
-- Definí el brief completo antes de generar código: objetivos, restricciones técnicas (sitio estático sin frameworks), estructura de secciones, dirección visual y los tres proyectos a mostrar con sus funcionalidades y tecnologías.
-- Aporté y verifiqué el contenido real: proyectos (Rebord, DEETA y Cubrí) y sus URLs, dominio oficial de Rebord, formación (Licenciatura desde 2025, cursos de Coderhouse 2023–2024), disponibilidad, email, LinkedIn y mi fotografía.
-- Revisé el resultado y pedí correcciones: que el historial de Git se organizara en commits honestos y sin etapas inventadas, y que la autoría de los commits quedara a mi nombre.
-- Creé el repositorio público en GitHub y configuré el despliegue en Vercel.
-
-Los datos de proyectos y métricas se tomaron de fuentes verificables (sitios publicados y GitHub). El test de usabilidad lo realicé con tres personas (un compañero de la facultad, un familiar y un amigo) y documenté solo lo que se registró: nada se presenta como resultado de investigación o test sin haberse realizado.
+Siguiendo la política de la cátedra, declaro que usé **Claude (Anthropic)** como asistente para generar código y borradores de documentación a partir de mis indicaciones, y para tareas técnicas de apoyo. El contenido, los proyectos, los datos y las decisiones de diseño son míos: revisé y corregí el resultado, verifiqué la información publicada y realicé el test de usabilidad con tres personas.
 
 ## Licencia
 

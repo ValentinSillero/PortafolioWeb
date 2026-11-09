@@ -58,7 +58,27 @@ Facilidad (1–5): __   Lo más confuso: ____________________________
 ¿Le escribiría? ___________________________________________________
 ```
 
-## Síntesis de hallazgos (completar después de las 3 pruebas)
+## Evaluación preliminar simulada (9/11/2026)
+
+> **No reemplaza el test con usuarios.** Antes de las pruebas reales hice un recorrido simulado del sitio publicado, poniéndome en el lugar de tres perfiles. No participaron otras personas: las observaciones son hipótesis del autor y se usaron para mejorar el sitio antes del test real, que sigue pendiente.
+
+| Perfil simulado | Tarea | Observación (hipótesis) | Mejora propuesta |
+|---|---|---|---|
+| Usuario de escritorio | Encontrar los proyectos y acceder a Rebord | La navegación es clara y los proyectos están bien organizados | Destacar más el botón de contacto |
+| Usuario mobile | Abrir el menú y encontrar DEETA | El menú resulta intuitivo, aunque algunas descripciones son extensas | Acortar los textos de las tarjetas en mobile |
+| Potencial cliente | Consultar los trabajos y encontrar un medio de contacto | Los proyectos transmiten experiencia, pero “Visitar sitio” y “Ver caso de estudio” podrían distinguirse mejor | Diferenciar visualmente ambos botones |
+
+### Cambios aplicados a partir de la evaluación simulada
+
+| # | Hipótesis | Cambio aplicado |
+|---|---|---|
+| S1 | El contacto no es lo bastante visible | En mobile y tablet el botón “Contactarme” solo existía dentro del menú hamburguesa. Ahora hay un botón **“Contacto”** siempre visible en el header, junto al menú (en desktop ya estaba en la barra). |
+| S2 | Los textos de las tarjetas son largos en mobile | Se acortaron la descripción, el problema y el resultado/aprendizaje de las 3 tarjetas (entre un 29 % y un 36 % menos de caracteres por tarjeta), sin quitar los campos que pide la consigna. |
+| S3 | Las dos acciones de cada proyecto se confunden | Se mantuvo la acción principal como botón relleno (“Ver caso de estudio” / “Ver detalles”) y “Visitar sitio ↗” pasó a ser un **enlace subrayado** con ícono de enlace externo: dos niveles visuales distintos para dos destinos distintos (página propia vs. sitio externo). |
+
+**Para validar con el test real:** visibilidad del contacto (T1), extensión de los textos en mobile (T6 y lectura de tarjetas) y claridad de las acciones de cada proyecto (T2, T3 y T5).
+
+## Síntesis de hallazgos del test real (completar después de las 3 pruebas)
 
 | # | Hallazgo | Participantes que lo vivieron | Severidad (alta / media / baja) | Cambio aplicado | Estado |
 |---|---|---|---|---|---|

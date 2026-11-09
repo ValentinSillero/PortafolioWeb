@@ -4,9 +4,9 @@ Ordenados por prioridad. Lo obligatorio primero.
 
 ## Obligatorio
 
-- [ ] **Email real** — reemplazar `EMAIL_PENDIENTE` en `index.html` (todas las apariciones: enlaces `mailto:`, botón “Copiar email” y texto visible).
-- [ ] **LinkedIn** — reemplazar `LINKEDIN_PENDIENTE` en `index.html` (todas las apariciones). La consigna exige email + LinkedIn + otra red (GitHub ya está).
-- [ ] **Confirmar URL de Rebord** — usé `https://rebord-inmobiliaria.vercel.app/` (encontrada por búsqueda: inmobiliaria de Colón, Entre Ríos). Confirmar que es la versión oficial o cambiarla por el dominio propio si existe.
+- [x] **Email real** — `valentinsillerovs@gmail.com` en los enlaces `mailto:`, el botón “Copiar email” y el texto visible.
+- [x] **LinkedIn** — perfil real en Contacto y en el footer.
+- [x] **URL de Rebord** — dominio oficial `https://www.inmobiliariarebord.com.ar/` en la tarjeta del proyecto y el caso de estudio.
 - [x] **Commits + repo público + deploy** — https://github.com/ValentinSillero/PortafolioWeb · https://portafolioweb-taupe-chi.vercel.app (deploy automático desde `main`).
 - [x] **URL definitiva** cargada en canonical, Open Graph, `robots.txt`, `sitemap.xml` y README.
 - [x] **Lighthouse sobre la URL publicada** — 100/100/100/100 en `/` y en el caso de estudio (`docs/lighthouse/lighthouse-mobile-vercel-*.png`).
@@ -16,10 +16,10 @@ Ordenados por prioridad. Lo obligatorio primero.
 
 ## Recomendado
 
-- [ ] **Foto real** — reemplazar el placeholder de “Sobre mí” por `assets/img/valentin.webp` (640×800) con `alt` descriptivo.
-- [ ] **Badge de disponibilidad** — hoy dice “Consultá mi disponibilidad”. Si confirmás que estás disponible, cambiarlo por “Disponible para nuevos proyectos”.
-- [ ] **Año de ingreso** a la Licenciatura en la timeline (hoy dice “En curso”).
-- [ ] **Institución de los cursos 2023–2024** (repos SASS/SEO, JavaScript, React, Backend). Hoy figura como “Cursos de desarrollo web”.
+- [x] **Foto real** — retrato en “Sobre mí” (`assets/img/valentin-480.webp` y `-720.webp`) con texto alternativo.
+- [x] **Badge de disponibilidad** — “Disponible para nuevos proyectos”.
+- [x] **Año de ingreso** — Licenciatura “2025 — Actualidad”, cursando 2.º año.
+- [x] **Institución de los cursos 2023–2024** — Coderhouse.
 - [ ] **Comparación Figma / sitio** de 2 secciones lado a lado (sugerencia del docente).
 - [ ] Agregar el portfolio de referencia del docente como 4.º referente del benchmark (opcional).
 

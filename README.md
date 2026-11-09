@@ -106,7 +106,7 @@ Reportes completos en [`docs/lighthouse/`](docs/lighthouse/) (`lh-mobile-vercel-
 
 - Tipografías [Geist y Geist Mono](https://vercel.com/font) — Vercel, SIL Open Font License 1.1 (`assets/fonts/OFL-Geist.txt`).
 - Íconos: dibujados a mano como SVG de línea para este sitio (el ícono de GitHub y LinkedIn son las marcas de cada servicio).
-- Capturas de proyectos: tomadas de los sitios publicados [rebord-inmobiliaria.vercel.app](https://rebord-inmobiliaria.vercel.app/), [deetaia.vercel.app](https://deetaia.vercel.app/) y [contratacionseguros.vercel.app](https://contratacionseguros.vercel.app/).
+- Capturas de proyectos: tomadas de los sitios publicados [inmobiliariarebord.com.ar](https://www.inmobiliariarebord.com.ar/), [deetaia.vercel.app](https://deetaia.vercel.app/) y [contratacionseguros.vercel.app](https://contratacionseguros.vercel.app/).
 - Benchmark (solo en `docs/`, con fines de análisis académico): [brittanychiang.com](https://brittanychiang.com), [leerob.com](https://leerob.com), [rauno.me](https://rauno.me).
 - Herramientas: WebAIM Contrast Checker (fórmula WCAG), Lighthouse, Chrome headless para capturas, sharp para convertir a WebP.
 - **No se usó ningún template** como punto de partida: diseño y código propios.
